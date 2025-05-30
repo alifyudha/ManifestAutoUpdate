@@ -20,16 +20,16 @@ on:
         description: args
         required: false
       users:
-        description: users
+        description: users (space separated)
         required: false
       password:
-        description: password
+        description: password (space separated)
         required: false
       ssfn:
-        description: ssfn
+        description: ssfn (space separated)
         required: false
       shared_secret:
-        description: 2fa
+        description: 2fa (space separated - MUST match users order)
         required: false
       update:
         description: update
@@ -76,24 +76,113 @@ jobs:
       - if: ${{ env.KEY == '' }}
         run: python main.py -l ${{ github.event.inputs.level || 'INFO' }} -i ${{ github.event.inputs.args }}
       - if: ${{ env.users != '' }}
-        #如果用户存在且enable为false 密码或者ssfn 与新添加的不同这替换并修改enable为true，删除status
+        name: Update users and re-enable disabled accounts
         run: |
-           python -c "import os
+           python -c "
+           import os
            import json
            import itertools
-           j = json.load(open('data/users.json'))
-           us = json.load(open('data/userinfo.json'))
-           for u, p, s in itertools.zip_longest([i or None for i in (os.environ.get('users') or '').split(' ')],[i or None for i in (os.environ.get('password') or '').split(' ')],[i or None for i in (os.environ.get('ssfn') or '').split(' ')]):
-              if u:
-                  if u in j and u in us and not us[u]['enable'] and (j[u][0] != p or j[u][1] != s):
-                      us[u]['enable'] = True
-                      us[u].pop('status')
-                  j.update({u:[p, s]})
-           json.dump(us, open('data/userinfo.json', 'w'))
-           json.dump(j, open('data/users.json', 'w'))"
-        #run: python -c "import os;import json;import itertools;j=json.load(open('data/users.json'));j.update({u:[p,s] for u,p,s in itertools.zip_longest([i or None for i in (os.environ.get('users') or '').split(',')],[i or None for i in (os.environ.get('password') or '').split(',')],[i or None for i in (os.environ.get('ssfn') or '').split(',')]) if u});json.dump(j,open('data/users.json','w'))"
+           from pathlib import Path
+           
+           # Create files if they don't exist
+           Path('data/users.json').touch()
+           Path('data/userinfo.json').touch()
+           
+           # Load existing data safely
+           try:
+               with open('data/users.json') as f:
+                   j = json.load(f) if f.read().strip() else {}
+           except:
+               j = {}
+           
+           try:
+               with open('data/userinfo.json') as f:
+                   us = json.load(f) if f.read().strip() else {}
+           except:
+               us = {}
+           
+           # Process users (FIXED: consistent space splitting)
+           users_list = [i or None for i in (os.environ.get('users') or '').split(' ')]
+           password_list = [i or None for i in (os.environ.get('password') or '').split(' ')]
+           ssfn_list = [i or None for i in (os.environ.get('ssfn') or '').split(' ')]
+           
+           for u, p, s in itertools.zip_longest(users_list, password_list, ssfn_list):
+               if u:
+                   print(f'Processing user: {u}')
+                   
+                   # Re-enable disabled accounts with different credentials
+                   if u in j and u in us and not us[u].get('enable', True):
+                       if j[u][0] != p or j[u][1] != s:
+                           us[u]['enable'] = True
+                           us[u].pop('status', None)
+                           print(f'Re-enabled account: {u}')
+                   
+                   # Update credentials
+                   j[u] = [p, s]
+                   
+                   # Ensure userinfo exists
+                   if u not in us:
+                       us[u] = {'app': [], 'update': 0, 'enable': True}
+           
+           # Save files
+           with open('data/userinfo.json', 'w') as f:
+               json.dump(us, f, indent=2)
+           with open('data/users.json', 'w') as f:
+               json.dump(j, f, indent=2)
+           
+           print('Users updated successfully')
+           "
       - if: ${{ env.shared_secret != '' }}
-        run: python -c "import os;import json;import itertools;j=json.load(open('data/2fa.json'));j.update({u:f for u,f in itertools.zip_longest([i or None for i in (os.environ.get('users') or '').split(',')],[i or None for i in (os.environ.get('shared_secret') or '').split(',')]) if u});json.dump(j,open('data/2fa.json','w'))"
+        name: Update 2FA secrets with validation
+        run: |
+           python -c "
+           import os
+           import json
+           import itertools
+           import base64
+           from pathlib import Path
+           
+           # Create file if it doesn't exist
+           Path('data/2fa.json').touch()
+           
+           # Load existing 2FA data safely
+           try:
+               with open('data/2fa.json') as f:
+                   content = f.read().strip()
+                   j = json.loads(content) if content else {}
+           except:
+               j = {}
+           
+           # FIXED: Use space splitting to match users input
+           users_list = [i or None for i in (os.environ.get('users') or '').split(' ')]
+           secret_list = [i or None for i in (os.environ.get('shared_secret') or '').split(' ')]
+           
+           print(f'Processing {len(users_list)} users and {len(secret_list)} secrets')
+           
+           # Validate and update 2FA secrets
+           for u, secret in itertools.zip_longest(users_list, secret_list):
+               if u and secret:
+                   print(f'Processing 2FA for user: {u}')
+                   
+                   # Basic validation - check if it's valid base64
+                   try:
+                       decoded = base64.b64decode(secret)
+                       if len(decoded) >= 10:  # Reasonable length check
+                           j[u] = secret
+                           print(f'✅ 2FA secret added for {u}')
+                       else:
+                           print(f'❌ 2FA secret too short for {u}')
+                   except Exception as e:
+                       print(f'❌ Invalid 2FA secret for {u}: {e}')
+               elif u:
+                   print(f'⚠️  No 2FA secret provided for {u}')
+           
+           # Save 2FA file
+           with open('data/2fa.json', 'w') as f:
+               json.dump(j, f, indent=2)
+           
+           print('2FA secrets updated successfully')
+           "
       - if: ${{ env.UsersJson != '' }}
         run: python -c "import os;import json;j=json.load(open('data/users.json'));j.update(json.loads(os.environ.get('UsersJson') or '{}'));json.dump(j,open('data/users.json','w'));"
       - if: ${{ env.TwoFactorJson != '' }}
