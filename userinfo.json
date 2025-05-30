@@ -1,14 +1,1 @@
-{
-  "9965417569": {
-    "app": [
-      2622380
-    ],
-    "update": 0,
-    "enable": true
-  },
-  "dandy4412512": {
-    "app": [],
-    "update": 0,
-    "enable": true
-  }
-}
+{"9965417569": {"app": [2622380], "update": 0, "enable": true}, "dandy4412512": {"app": [], "update": 0, "enable": false, "status": 85}}
