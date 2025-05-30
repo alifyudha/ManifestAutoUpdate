@@ -328,108 +328,108 @@ class ManifestAutoUpdate:
                 self.log.error(e)
                 return
 
-def login(self, steam, username, password):
-    #密码错误次数过超过15次导致ip封禁结束所有登录
-    if self.ret >= 15:
-        return
-    self.log.info(f'Logging in to account {username}!')
-    shared_secret = self.two_factor.get(username)
-    steam.username = username
-    result = steam.relogin()
-    wait = 1
-    
-    if result != EResult.OK:
-        if result != EResult.Fail:
-            self.log.warning(f'User {username}: Relogin failure reason: {result.__repr__()}')
-        if result == EResult.RateLimitExceeded:
-            with lock:
-                time.sleep(wait)
+    def login(self, steam, username, password):
+        #密码错误次数过超过15次导致ip封禁结束所有登录
+        if self.ret >= 15:
+            return
+        self.log.info(f'Logging in to account {username}!')
+        shared_secret = self.two_factor.get(username)
+        steam.username = username
+        result = steam.relogin()
+        wait = 1
         
-        # Generate 2FA code if we have shared secret
-        two_factor_code = None
-        if shared_secret:
-            try:
-                two_factor_code = generate_twofactor_code(base64.b64decode(shared_secret))
-                self.log.info(f'User {username}: Generated 2FA code using shared secret')
-            except Exception as e:
-                self.log.warning(f'User {username}: Failed to generate 2FA code: {e}')
-                two_factor_code = None
-        
-        result = steam.login(username, password, steam.login_key, None, two_factor_code=two_factor_code)
-    
-    count = self.retry_num
-    while result != EResult.OK and count:
-        if self.cli:
-            with lock:
-                self.log.warning(f'Using the command line to interactively log in to account {username}!')
-                result = steam.cli_login(username, password)
-            break
-        
-        # Handle different error types appropriately
-        elif result == EResult.AlreadyLoggedInElsewhere:
-            self.log.warning(f'User {username}: Already logged in elsewhere, skipping')
-            break
+        if result != EResult.OK:
+            if result != EResult.Fail:
+                self.log.warning(f'User {username}: Relogin failure reason: {result.__repr__()}')
+            if result == EResult.RateLimitExceeded:
+                with lock:
+                    time.sleep(wait)
             
-        elif result == EResult.RateLimitExceeded:
-            if not count:
-                break
-            with lock:
-                time.sleep(wait)
-            
-            # Retry with 2FA if available
+            # Generate 2FA code if we have shared secret
             two_factor_code = None
             if shared_secret:
                 try:
                     two_factor_code = generate_twofactor_code(base64.b64decode(shared_secret))
+                    self.log.info(f'User {username}: Generated 2FA code using shared secret')
                 except Exception as e:
-                    self.log.warning(f'User {username}: 2FA generation failed: {e}')
+                    self.log.warning(f'User {username}: Failed to generate 2FA code: {e}')
+                    two_factor_code = None
             
             result = steam.login(username, password, steam.login_key, None, two_factor_code=two_factor_code)
+        
+        count = self.retry_num
+        while result != EResult.OK and count:
+            if self.cli:
+                with lock:
+                    self.log.warning(f'Using the command line to interactively log in to account {username}!')
+                    result = steam.cli_login(username, password)
+                break
             
-        elif result == EResult.AccountLoginDeniedNeedTwoFactor:
-            # FIXED: Don't immediately disable account for 2FA issues
-            self.log.warning(f'User {username}: 2FA required but failed - this might be a timing issue')
-            if shared_secret:
-                self.log.warning(f'User {username}: 2FA secret exists but login failed - possible clock drift or invalid secret')
-            else:
-                self.log.warning(f'User {username}: No 2FA secret available')
-            
-            # Don't disable the account - it might work next time
-            break
-            
-        elif result in (EResult.AccountLogonDenied, EResult.AccountDisabled, EResult.PasswordUnset):
-            # These are serious account issues - disable the account
-            logging.warning(f'User {username} has been disabled due to serious account issue!')
-            self.user_info[username]['enable'] = False
-            self.user_info[username]['status'] = result
-            break
-            
-        elif result == EResult.InvalidPassword:
-            # Password issues - disable after multiple attempts
-            self.ret += 1
-            if self.ret >= 5:  # Be more lenient with password retries
-                logging.warning(f'User {username} disabled after multiple password failures!')
+            # Handle different error types appropriately
+            elif result == EResult.AlreadyLoggedInElsewhere:
+                self.log.warning(f'User {username}: Already logged in elsewhere, skipping')
+                break
+                
+            elif result == EResult.RateLimitExceeded:
+                if not count:
+                    break
+                with lock:
+                    time.sleep(wait)
+                
+                # Retry with 2FA if available
+                two_factor_code = None
+                if shared_secret:
+                    try:
+                        two_factor_code = generate_twofactor_code(base64.b64decode(shared_secret))
+                    except Exception as e:
+                        self.log.warning(f'User {username}: 2FA generation failed: {e}')
+                
+                result = steam.login(username, password, steam.login_key, None, two_factor_code=two_factor_code)
+                
+            elif result == EResult.AccountLoginDeniedNeedTwoFactor:
+                # FIXED: Don't immediately disable account for 2FA issues
+                self.log.warning(f'User {username}: 2FA required but failed - this might be a timing issue')
+                if shared_secret:
+                    self.log.warning(f'User {username}: 2FA secret exists but login failed - possible clock drift or invalid secret')
+                else:
+                    self.log.warning(f'User {username}: No 2FA secret available')
+                
+                # Don't disable the account - it might work next time
+                break
+                
+            elif result in (EResult.AccountLogonDenied, EResult.AccountDisabled, EResult.PasswordUnset):
+                # These are serious account issues - disable the account
+                logging.warning(f'User {username} has been disabled due to serious account issue!')
                 self.user_info[username]['enable'] = False
                 self.user_info[username]['status'] = result
-            break
+                break
+                
+            elif result == EResult.InvalidPassword:
+                # Password issues - disable after multiple attempts
+                self.ret += 1
+                if self.ret >= 5:  # Be more lenient with password retries
+                    logging.warning(f'User {username} disabled after multiple password failures!')
+                    self.user_info[username]['enable'] = False
+                    self.user_info[username]['status'] = result
+                break
+                
+            else:
+                # Unknown error - log but don't disable immediately
+                self.log.warning(f'User {username}: Unknown login error: {result}')
+                break
             
-        else:
-            # Unknown error - log but don't disable immediately
-            self.log.warning(f'User {username}: Unknown login error: {result}')
-            break
+            wait += 1
+            count -= 1
         
-        wait += 1
-        count -= 1
-    
-    if result == EResult.OK:
-        self.log.info(f'User {username} login successfully!')
-        # Clear any previous error status on successful login
-        if username in self.user_info and 'status' in self.user_info[username]:
-            self.user_info[username].pop('status', None)
-    else:
-        self.log.error(f'User: {username}: Login failure reason: {result.__repr__()}')
-    
-    return result
+        if result == EResult.OK:
+            self.log.info(f'User {username} login successfully!')
+            # Clear any previous error status on successful login
+            if username in self.user_info and 'status' in self.user_info[username]:
+                self.user_info[username].pop('status', None)
+        else:
+            self.log.error(f'User: {username}: Login failure reason: {result.__repr__()}')
+        
+        return result
 
     def async_task(self, cdn, app_id,appinfo,package,depot):
         self.init_app_repo(app_id)
