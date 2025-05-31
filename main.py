@@ -13,6 +13,7 @@ import functools
 import threading
 import traceback
 import subprocess
+from datetime import datetime
 from pathlib import Path
 from steam.enums import EResult
 from push import push, push_data
@@ -55,7 +56,7 @@ class MyJson(dict):
 
     def dump(self):
         with self.path.open('w') as f:
-            json.dump(self, f)
+            json.dump(self, f, indent=2)
 
 
 class LogExceptions:
@@ -210,7 +211,10 @@ class ManifestAutoUpdate:
             manifest_commit = result.get('manifest_commit')
             if len(delete_list) > 1:
                 self.log.warning('Deleted multiple files?')
-            self.set_depot_info(depot_id, manifest_gid)
+            
+            # MODIFIED: Save depot info with timestamp and immediately save to appinfo.json
+            self.set_depot_info(depot_id, manifest_gid, app_id, username)
+            
             app_repo = git.Repo(app_path)
             with lock:
                 if manifest_commit:
@@ -239,9 +243,56 @@ class ManifestAutoUpdate:
                         self.log.debug(f'Unlock app: {app_id}')
                         self.app_lock.pop(int(app_id))
 
-    def set_depot_info(self, depot_id, manifest_gid):
+    def set_depot_info(self, depot_id, manifest_gid, app_id=None, username=None):
+        """
+        MODIFIED: Now stores depot info with timestamp and additional metadata
+        """
+        current_time = datetime.now()
+        timestamp_iso = current_time.isoformat()
+        timestamp_readable = current_time.strftime("%Y-%m-%d %H:%M:%S")
+        
+        # Check if this is a new manifest or an update
+        is_update = False
+        old_manifest_gid = None
+        
+        if depot_id in self.app_info:
+            # Handle both old format (just manifest_gid) and new format (dict)
+            if isinstance(self.app_info[depot_id], dict):
+                old_manifest_gid = self.app_info[depot_id].get('manifest_gid')
+            else:
+                old_manifest_gid = self.app_info[depot_id]
+            
+            if old_manifest_gid != manifest_gid:
+                is_update = True
+        
         with lock:
-            self.app_info[depot_id] = manifest_gid
+            # Store comprehensive depot information
+            depot_info = {
+                'manifest_gid': manifest_gid,
+                'last_updated': timestamp_iso,
+                'last_updated_readable': timestamp_readable,
+                'timestamp': int(time.time()),
+                'is_update': is_update
+            }
+            
+            # Add optional metadata if available
+            if app_id:
+                depot_info['app_id'] = int(app_id)
+            if username:
+                depot_info['updated_by'] = username
+            if old_manifest_gid and is_update:
+                depot_info['previous_manifest_gid'] = old_manifest_gid
+            
+            self.app_info[depot_id] = depot_info
+            
+            # Immediately save to file after each update
+            self.save_depot_info()
+            
+            # Log the update with timestamp
+            action = "Updated" if is_update else "Added"
+            self.log.info(f'{action} depot {depot_id} manifest {manifest_gid} at {timestamp_readable}' + 
+                         (f' by {username}' if username else '') +
+                         (f' (was {old_manifest_gid})' if old_manifest_gid and is_update else ''))
 
     def save_user_info(self):
         with lock:
@@ -252,8 +303,25 @@ class ManifestAutoUpdate:
         self.save_user_info()
 
     def save_depot_info(self):
+        """
+        MODIFIED: Now saves with better formatting and includes a last_save timestamp
+        """
         with lock:
-            self.app_info.dump()
+            # Add metadata about when the file was last saved
+            if not isinstance(self.app_info, dict):
+                self.app_info.clear()
+            
+            # Create a copy with metadata
+            save_data = dict(self.app_info)
+            save_data['_metadata'] = {
+                'last_save': datetime.now().isoformat(),
+                'last_save_readable': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                'total_depots': len([k for k in save_data.keys() if k != '_metadata']),
+                'file_version': '2.0'
+            }
+            
+            with self.app_info_path.open('w') as f:
+                json.dump(save_data, f, indent=2, sort_keys=True)
 
     def get_app_worktree(self):
         worktree_dict = {}
@@ -535,7 +603,19 @@ class ManifestAutoUpdate:
                 depot_id = str(depot.depot_id)
                 manifest_gid = str(depot.gid)
                 self.app_lock[int(app_id)].add(depot_id)
-                self.set_depot_info(depot_id, manifest_gid)
+                
+                # MODIFIED: Check if manifest already exists before setting depot info
+                existing_manifest_gid = None
+                if depot_id in self.app_info:
+                    if isinstance(self.app_info[depot_id], dict):
+                        existing_manifest_gid = self.app_info[depot_id].get('manifest_gid')
+                    else:
+                        existing_manifest_gid = self.app_info[depot_id]
+                
+                # Only set depot info if it's new or updated
+                if existing_manifest_gid != manifest_gid:
+                    self.set_depot_info(depot_id, manifest_gid, app_id, username)
+                
                 with lock:
                     if int(app_id) not in self.user_info[username]['app']:
                         self.user_info[username]['app'].append(int(app_id))
@@ -626,7 +706,15 @@ class ManifestAutoUpdate:
                 if depot_id.isdecimal():
                     if manifests := depot.get('manifests'):
                         if manifest := manifests.get('public'):
-                            if depot_id in self.app_info and self.app_info[depot_id] != manifest:
+                            # MODIFIED: Handle both old and new depot info format for comparison
+                            current_manifest = None
+                            if depot_id in self.app_info:
+                                if isinstance(self.app_info[depot_id], dict):
+                                    current_manifest = self.app_info[depot_id].get('manifest_gid')
+                                else:
+                                    current_manifest = self.app_info[depot_id]
+                            
+                            if current_manifest != manifest:
                                 update_app_set.add(app_id)
         update_app_user = {}
         update_user_set = set()
