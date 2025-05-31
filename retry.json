@@ -4,7 +4,7 @@
     "shared_secret": null,
     "ssfn_filename": null,
     "error_msg": "Error 50 - Retry required",
-    "timestamp": "2025-05-31 18:38:30",
-    "retry_count": 1
+    "timestamp": "2025-05-31 18:38:58",
+    "retry_count": 2
   }
 }
