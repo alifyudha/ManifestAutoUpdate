@@ -13,7 +13,6 @@ import functools
 import threading
 import traceback
 import subprocess
-from datetime import datetime
 from pathlib import Path
 from steam.enums import EResult
 from push import push, push_data
@@ -24,7 +23,7 @@ from DepotManifestGen.main import MySteamClient, MyCDNClient, get_manifest, Bill
 
 lock = Lock()
 #改大100倍修复添加多账号导致堆栈溢出
-sys.setrecursionlimit(10000000)
+sys.setrecursionlimit(100000000)
 parser = argparse.ArgumentParser()
 parser.add_argument('-c', '--credential-location', default=None)
 parser.add_argument('-l', '--level', default='INFO')
@@ -56,7 +55,7 @@ class MyJson(dict):
 
     def dump(self):
         with self.path.open('w') as f:
-            json.dump(self, f, indent=2)
+            json.dump(self, f)
 
 
 class LogExceptions:
@@ -211,10 +210,7 @@ class ManifestAutoUpdate:
             manifest_commit = result.get('manifest_commit')
             if len(delete_list) > 1:
                 self.log.warning('Deleted multiple files?')
-            
-            # MODIFIED: Save depot info with timestamp and immediately save to appinfo.json
-            self.set_depot_info(depot_id, manifest_gid, app_id, username)
-            
+            self.set_depot_info(depot_id, manifest_gid)
             app_repo = git.Repo(app_path)
             with lock:
                 if manifest_commit:
@@ -243,76 +239,9 @@ class ManifestAutoUpdate:
                         self.log.debug(f'Unlock app: {app_id}')
                         self.app_lock.pop(int(app_id))
 
-    def set_depot_info(self, depot_id, manifest_gid, app_id=None, username=None):
-        """
-        MODIFIED: Stores depot info with timestamp while keeping simple format
-        """
-        current_time = datetime.now()
-        timestamp_iso = current_time.isoformat()
-        timestamp_readable = current_time.strftime("%Y-%m-%d %H:%M:%S")
-        current_timestamp = int(time.time())
-        
-        # Check if this is a new manifest or an update
-        is_update = False
-        old_manifest_gid = None
-        
-        if depot_id in self.app_info:
-            old_manifest_gid = self.app_info[depot_id]
-            if old_manifest_gid != manifest_gid:
-                is_update = True
-        
+    def set_depot_info(self, depot_id, manifest_gid):
         with lock:
-            # Store simple manifest_gid (keeping original format)
             self.app_info[depot_id] = manifest_gid
-            
-            # Initialize timestamps section if it doesn't exist
-            if '_timestamps' not in self.app_info:
-                self.app_info['_timestamps'] = {}
-            
-            # Get existing timestamp data if it exists
-            existing_timestamps = self.app_info['_timestamps'].get(depot_id, {})
-            
-            # Create timestamp information
-            timestamp_data = {
-                'last_update': timestamp_iso,
-                'last_update_readable': timestamp_readable,
-                'timestamp': current_timestamp,
-                'is_update': is_update
-            }
-            
-            # If this is a new depot, set added_in timestamp
-            if not is_update and depot_id not in self.app_info.get('_timestamps', {}):
-                timestamp_data['added_in'] = timestamp_iso
-                timestamp_data['added_in_readable'] = timestamp_readable
-                timestamp_data['added_timestamp'] = current_timestamp
-                if username:
-                    timestamp_data['added_by'] = username
-            else:
-                # Preserve existing added_in information
-                if 'added_in' in existing_timestamps:
-                    timestamp_data['added_in'] = existing_timestamps['added_in']
-                    timestamp_data['added_in_readable'] = existing_timestamps['added_in_readable']
-                    timestamp_data['added_timestamp'] = existing_timestamps['added_timestamp']
-                if 'added_by' in existing_timestamps:
-                    timestamp_data['added_by'] = existing_timestamps['added_by']
-            
-            # Add current update metadata
-            if username:
-                timestamp_data['updated_by'] = username
-            if old_manifest_gid and is_update:
-                timestamp_data['previous_manifest_gid'] = old_manifest_gid
-            
-            # Store the timestamp data
-            self.app_info['_timestamps'][depot_id] = timestamp_data
-            
-            # Immediately save to file after each update
-            self.save_depot_info()
-            
-            # Log the update with timestamp
-            action = "Updated" if is_update else "Added"
-            self.log.info(f'{action} depot {depot_id} manifest {manifest_gid} at {timestamp_readable}' + 
-                         (f' by {username}' if username else '') +
-                         (f' (was {old_manifest_gid})' if old_manifest_gid and is_update else ''))
 
     def save_user_info(self):
         with lock:
@@ -323,26 +252,8 @@ class ManifestAutoUpdate:
         self.save_user_info()
 
     def save_depot_info(self):
-        """
-        MODIFIED: Saves with timestamps while keeping simple depot format
-        """
         with lock:
-            # Create a copy with metadata
-            save_data = dict(self.app_info)
-            
-            # Update metadata about when the file was last saved
-            if '_metadata' not in save_data:
-                save_data['_metadata'] = {}
-            
-            save_data['_metadata'].update({
-                'last_save': datetime.now().isoformat(),
-                'last_save_readable': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                'total_depots': len([k for k in save_data.keys() if not k.startswith('_')]),
-                'file_version': '2.0'
-            })
-            
-            with self.app_info_path.open('w') as f:
-                json.dump(save_data, f, indent=2, sort_keys=True)
+            self.app_info.dump()
 
     def get_app_worktree(self):
         worktree_dict = {}
@@ -426,26 +337,14 @@ class ManifestAutoUpdate:
         steam.username = username
         result = steam.relogin()
         wait = 1
-        
         if result != EResult.OK:
             if result != EResult.Fail:
                 self.log.warning(f'User {username}: Relogin failure reason: {result.__repr__()}')
             if result == EResult.RateLimitExceeded:
                 with lock:
                     time.sleep(wait)
-            
-            # Generate 2FA code if we have shared secret
-            two_factor_code = None
-            if shared_secret:
-                try:
-                    two_factor_code = generate_twofactor_code(base64.b64decode(shared_secret))
-                    self.log.info(f'User {username}: Generated 2FA code using shared secret')
-                except Exception as e:
-                    self.log.warning(f'User {username}: Failed to generate 2FA code: {e}')
-                    two_factor_code = None
-            
-            result = steam.login(username, password, steam.login_key, None, two_factor_code=two_factor_code)
-        
+            result = steam.login(username, password, steam.login_key,None, two_factor_code=generate_twofactor_code(
+                base64.b64decode(shared_secret)) if shared_secret else None)
         count = self.retry_num
         while result != EResult.OK and count:
             if self.cli:
@@ -453,71 +352,31 @@ class ManifestAutoUpdate:
                     self.log.warning(f'Using the command line to interactively log in to account {username}!')
                     result = steam.cli_login(username, password)
                 break
-            
-            # Handle different error types appropriately
+            #避免多次挤号导致ip封禁
             elif result == EResult.AlreadyLoggedInElsewhere:
-                self.log.warning(f'User {username}: Already logged in elsewhere, skipping')
                 break
-                
             elif result == EResult.RateLimitExceeded:
                 if not count:
                     break
                 with lock:
                     time.sleep(wait)
-                
-                # Retry with 2FA if available
-                two_factor_code = None
-                if shared_secret:
-                    try:
-                        two_factor_code = generate_twofactor_code(base64.b64decode(shared_secret))
-                    except Exception as e:
-                        self.log.warning(f'User {username}: 2FA generation failed: {e}')
-                
-                result = steam.login(username, password, steam.login_key, None, two_factor_code=two_factor_code)
-                
-            elif result == EResult.AccountLoginDeniedNeedTwoFactor:
-                # FIXED: Don't immediately disable account for 2FA issues
-                self.log.warning(f'User {username}: 2FA required but failed - this might be a timing issue')
-                if shared_secret:
-                    self.log.warning(f'User {username}: 2FA secret exists but login failed - possible clock drift or invalid secret')
-                else:
-                    self.log.warning(f'User {username}: No 2FA secret available')
-                
-                # Don't disable the account - it might work next time
-                break
-                
-            elif result in (EResult.AccountLogonDenied, EResult.AccountDisabled, EResult.PasswordUnset):
-                # These are serious account issues - disable the account
-                logging.warning(f'User {username} has been disabled due to serious account issue!')
+                result = steam.login(username, password, steam.login_key,None, two_factor_code=generate_twofactor_code(
+                base64.b64decode(shared_secret)) if shared_secret else None)
+            elif result in (EResult.AccountLogonDenied, EResult.AccountDisabled,
+                            EResult.AccountLoginDeniedNeedTwoFactor, EResult.PasswordUnset,
+                            EResult.InvalidPassword):
+                logging.warning(f'User {username} has been disabled!')
                 self.user_info[username]['enable'] = False
                 self.user_info[username]['status'] = result
                 break
-                
-            elif result == EResult.InvalidPassword:
-                # Password issues - disable after multiple attempts
-                self.ret += 1
-                if self.ret >= 5:  # Be more lenient with password retries
-                    logging.warning(f'User {username} disabled after multiple password failures!')
-                    self.user_info[username]['enable'] = False
-                    self.user_info[username]['status'] = result
-                break
-                
-            else:
-                # Unknown error - log but don't disable immediately
-                self.log.warning(f'User {username}: Unknown login error: {result}')
-                break
-            
             wait += 1
             count -= 1
-        
+        if result == EResult.InvalidPassword:
+            self.ret+=1
         if result == EResult.OK:
             self.log.info(f'User {username} login successfully!')
-            # Clear any previous error status on successful login
-            if username in self.user_info and 'status' in self.user_info[username]:
-                self.user_info[username].pop('status', None)
         else:
             self.log.error(f'User: {username}: Login failure reason: {result.__repr__()}')
-        
         return result
 
     def async_task(self, cdn, app_id,appinfo,package,depot):
@@ -624,14 +483,7 @@ class ManifestAutoUpdate:
                 depot_id = str(depot.depot_id)
                 manifest_gid = str(depot.gid)
                 self.app_lock[int(app_id)].add(depot_id)
-                
-                # MODIFIED: Check if manifest already exists (simple format)
-                existing_manifest_gid = self.app_info.get(depot_id)
-                
-                # Only set depot info if it's new or updated
-                if existing_manifest_gid != manifest_gid:
-                    self.set_depot_info(depot_id, manifest_gid, app_id, username)
-                
+                self.set_depot_info(depot_id, manifest_gid)
                 with lock:
                     if int(app_id) not in self.user_info[username]['app']:
                         self.user_info[username]['app'].append(int(app_id))
@@ -722,10 +574,7 @@ class ManifestAutoUpdate:
                 if depot_id.isdecimal():
                     if manifests := depot.get('manifests'):
                         if manifest := manifests.get('public'):
-                            # MODIFIED: Simple format comparison
-                            current_manifest = self.app_info.get(depot_id)
-                            
-                            if current_manifest != manifest:
+                            if depot_id in self.app_info and self.app_info[depot_id] != manifest:
                                 update_app_set.add(app_id)
         update_app_user = {}
         update_user_set = set()
