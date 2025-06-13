@@ -1,0 +1,578 @@
+"appid" "485610"
+"common"
+{
+	"name" "Soccer Online: Ball 3D"
+	"type" "Game"
+	"oslist" "windows,macos"
+	"osarch" "64"
+	"logo" "107bf2cbd205e852c262d884b96cac0e86948ea5"
+	"logo_small" "107bf2cbd205e852c262d884b96cac0e86948ea5_thumb"
+	"clienticon" "39d36ecf21c2578e8b095c9db735f2c0822962dc"
+	"clienttga" "65660ccd847a690dc1450bc860820408ebcf4b37"
+	"icon" "68cdf3cab7f123f7ae2dd7584596503a497883d3"
+	"clienticns" "2db646d8e0885c463cf1c27dc80e48f356a02012"
+	"releasestate" "released"
+	"osextended" "macos64"
+	"name_localized"
+	{
+		"schinese" "足球在线：球3D"
+		"tchinese" "足球在線：球3D"
+		"japanese" "サッカーオンライン：ボール3D"
+		"koreana" "축구 온라인: 볼3D"
+		"russian" "Футбол Онлайн: Мяч 3D"
+		"thai" "ฟุตบอลออนไลน์: ลูกบอล 3D"
+		"ukrainian" "Футбол Онлайн: М\'яч 3D"
+		"greek" "Ποδόσφαιρο Διαδικτυακό: Μπάλα 3D"
+		"bulgarian" "Футбол Онлайн: Топка 3D"
+	}
+	"eulas"
+	{
+		"0"
+		{
+			"id" "485610_eula_0"
+			"name" "Ball 3D: Soccer Online EULA"
+			"url" "https://store.steampowered.com//eula/485610_eula_0"
+			"version" "1"
+		}
+	}
+	"aicontenttype" "1"
+	"steam_deck_compatibility"
+	{
+		"category" "2"
+		"steamos_compatibility" "2"
+		"test_timestamp" "1649376000"
+		"tested_build_id" "7926645"
+		"tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_DefaultControllerConfigNotFullyFunctional"
+			}
+			"1"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_ControllerGlyphsDoNotMatchDeckDevice"
+			}
+			"2"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_TextInputDoesNotAutomaticallyInvokesKeyboard"
+			}
+			"3"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_InterfaceTextIsLegible"
+			}
+			"4"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_DefaultConfigurationIsPerformant"
+			}
+			"5"
+			{
+				"display" "1"
+				"token" "#SteamDeckVerified_TestResult_SingleplayerGameplayRequiresActiveInternetConnection"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamOS_TestResult_GameStartupFunctional"
+			}
+			"1"
+			{
+				"display" "1"
+				"token" "#SteamOS_TestResult_TextInputDoesNotAutomaticallyInvokesKeyboard"
+			}
+			"2"
+			{
+				"display" "1"
+				"token" "#SteamOS_TestResult_DefaultControllerConfigNotFullyFunctional"
+			}
+			"3"
+			{
+				"display" "1"
+				"token" "#SteamOS_TestResult_SingleplayerGameplayRequiresActiveInternetConnection"
+			}
+		}
+		"configuration"
+		{
+			"supported_input" "gamepad"
+			"requires_manual_keyboard_invoke" "1"
+			"requires_non_controller_launcher_nav" "0"
+			"primary_player_is_controller_slot_0" "0"
+			"non_deck_display_glyphs" "1"
+			"small_text" "0"
+			"requires_internet_for_setup" "0"
+			"requires_internet_for_singleplayer" "1"
+			"recommended_runtime" "proton-stable"
+			"requires_h264" "0"
+			"requires_voice_files" "0"
+			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "0"
+		}
+	}
+	"market_presence" "1"
+	"controllertagwizard" "1"
+	"small_capsule"
+	{
+		"english" "13b9dacf6b2efeebb80d8335c99e03bc34ca0228/capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "0becb5b8e325d08101422223602d6e68abafa9e5/header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_hero_blur" "en"
+		"library_logo" "en"
+		"library_header" "en"
+		"logo_position"
+		{
+			"pinned_position" "BottomLeft"
+			"width_pct" "28.669579041972753"
+			"height_pct" "72.22222222222223"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "99028cb19f27a433ee0630a3c30e38a47bb5c9ce/library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "99028cb19f27a433ee0630a3c30e38a47bb5c9ce/library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "b9bca23ed0300483445b2001bd6e0150f165ea78/library_hero.jpg"
+			}
+			"image2x"
+			{
+				"english" "b9bca23ed0300483445b2001bd6e0150f165ea78/library_hero_2x.jpg"
+			}
+		}
+		"library_hero_blur"
+		{
+			"image"
+			{
+				"english" "b9bca23ed0300483445b2001bd6e0150f165ea78/library_hero_blur.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"logo_position"
+			{
+				"pinned_position" "BottomLeft"
+				"width_pct" "28.669579041972753"
+				"height_pct" "72.22222222222223"
+			}
+			"image"
+			{
+				"english" "620c9e62a5bb1b5261933a0d0c2914f41f38bdf7/logo.png"
+			}
+			"image2x"
+			{
+				"english" "620c9e62a5bb1b5261933a0d0c2914f41f38bdf7/logo_2x.png"
+			}
+		}
+		"library_header"
+		{
+			"image"
+			{
+				"english" "0becb5b8e325d08101422223602d6e68abafa9e5/library_header.jpg"
+			}
+			"image2x"
+			{
+				"english" "0becb5b8e325d08101422223602d6e68abafa9e5/library_header_2x.jpg"
+			}
+		}
+	}
+	"store_asset_mtime" "1745755554"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "Unusualsoft"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "Unusualsoft"
+		}
+		"2"
+		{
+			"type" "franchise"
+			"name" "Unusualsoft"
+		}
+		"3"
+		{
+			"type" "franchise"
+			"name" "Soccer Online"
+		}
+	}
+	"primary_genre" "18"
+	"genres"
+	{
+		"0" "18"
+	}
+	"category"
+	{
+		"category_1" "1"
+		"category_35" "1"
+		"category_22" "1"
+		"category_29" "1"
+		"category_36" "1"
+		"category_9" "1"
+		"category_38" "1"
+		"category_27" "1"
+		"category_49" "1"
+		"category_2" "1"
+		"category_20" "1"
+		"category_62" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"polish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"german"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"brazilian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"turkish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"portuguese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"schinese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"french"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"italian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"spanish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"bulgarian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"czech"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"danish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"dutch"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"finnish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"greek"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"hungarian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"indonesian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"japanese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"koreana"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"norwegian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"romanian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"russian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"latam"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"swedish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"thai"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"tchinese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"ukrainian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"vietnamese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1490960700"
+	"community_visible_stats" "1"
+	"community_hub_visible" "1"
+	"gameid" "485610"
+	"store_tags"
+	{
+		"0" "701"
+		"1" "1254546"
+		"2" "1775"
+		"3" "5055"
+		"4" "3859"
+		"5" "599"
+		"6" "1773"
+		"7" "3843"
+		"8" "3934"
+		"9" "5711"
+		"10" "3813"
+		"11" "4747"
+		"12" "1697"
+		"13" "19"
+		"14" "3878"
+		"15" "4191"
+		"16" "4305"
+		"17" "4252"
+		"18" "4026"
+		"19" "1734"
+	}
+	"review_score" "8"
+	"review_percentage" "84"
+}
+"extended"
+{
+	"developer" "Unusualsoft"
+	"publisher" "Unusualsoft"
+}
+"config"
+{
+	"contenttype" "3"
+	"installdir" "Ball 3D"
+	"launch"
+	{
+		"1"
+		{
+			"executable" "Ball 3D.exe"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+			}
+		}
+		"2"
+		{
+			"executable" "Ball 3D.app"
+			"type" "default"
+			"config"
+			{
+				"oslist" "macos"
+			}
+		}
+	}
+	"steamcontrollertemplateindex" "6"
+}
+"depots"
+{
+	"hasdepotsindlc" "0"
+	"baselanguages" "english,german,french,italian,koreana,spanish,schinese,tchinese,russian,thai,japanese,portuguese,polish,danish,dutch,finnish,norwegian,swedish,hungarian,czech,romanian,turkish,brazilian,bulgarian,greek,ukrainian,latam,vietnamese,indonesian"
+	"485611"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "6612011756102245513"
+				"size" "401819132"
+				"download" "125689136"
+			}
+			"slow"
+			{
+				"gid" "7915175763906594575"
+				"size" "294044808"
+				"download" "91101712"
+			}
+			"slow_2020"
+			{
+				"gid" "5371930099073750952"
+				"size" "259591044"
+				"download" "78543632"
+			}
+		}
+	}
+	"485612"
+	{
+		"config"
+		{
+			"oslist" "macos"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8455266479525449593"
+				"size" "405240528"
+				"download" "124764256"
+			}
+			"slow"
+			{
+				"gid" "1884591143235218235"
+				"size" "313630576"
+				"download" "94953936"
+			}
+			"slow_2020"
+			{
+				"gid" "5153479591744052359"
+				"size" "281596719"
+				"download" "83447952"
+			}
+		}
+	}
+	"485613"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "17799544"
+			"timeupdated" "1742500304"
+		}
+		"slow"
+		{
+			"buildid" "7211209"
+			"description" "No Sprint, Old Version"
+			"timeupdated" "1631174544"
+		}
+		"slow_2020"
+		{
+			"buildid" "14691385"
+			"description" "Old version from 2020"
+			"timeupdated" "1718194450"
+		}
+	}
+}
+"_missing_token" "False"
+"_change_number" "28973933"
+"_sha" "fc1017676ff9eb63bb5bd73fdc147075c64ecfe5"
+"_size" "11044"
