@@ -1,0 +1,441 @@
+"appid" "1030830"
+"common"
+{
+	"name" "Mafia II: Definitive Edition"
+	"type" "Game"
+	"releasestate" "released"
+	"name_localized"
+	{
+		"japanese" "マフィアII コンプリート・エディション"
+		"tchinese" "四海兄弟II 決定版"
+		"schinese" "四海兄弟II 最终版"
+		"koreana" "마피아 II  데피니티브 에디션"
+		"spanish" "Mafia II: Edición Definitiva"
+		"polish" "Mafia II: Edycja Ostateczna"
+		"czech" "Mafia II: Definitivní edice"
+	}
+	"languages"
+	{
+		"english" "1"
+		"german" "1"
+		"french" "1"
+		"italian" "1"
+		"koreana" "1"
+		"spanish" "1"
+		"schinese" "1"
+		"tchinese" "1"
+		"russian" "1"
+		"japanese" "1"
+		"polish" "1"
+		"czech" "1"
+		"brazilian" "1"
+		"latam" "1"
+	}
+	"clienticon" "28a238a0a30c3a66b18a0727479c4ac7adc90c29"
+	"clienttga" "f194d68bba7c5a2a90f2b84364cacaa8b5fe4865"
+	"icon" "f80e173ad5c242ca0d41e30af1f6358d1e64d9b4"
+	"logo" "044e9ee0bde9c8a79dc264df7087cba05e4ba324"
+	"logo_small" "044e9ee0bde9c8a79dc264df7087cba05e4ba324_thumb"
+	"oslist" "windows"
+	"osarch" "64"
+	"osextended" ""
+	"eulas"
+	{
+		"0"
+		{
+			"id" "1030830_eula_0"
+			"name" "Mafia II: Definitive Edition EULA"
+			"url" "https://store.steampowered.com//eula/1030830_eula_0"
+			"version" "1"
+		}
+	}
+	"content_descriptors"
+	{
+		"0" "1"
+		"1" "2"
+		"2" "5"
+	}
+	"steam_deck_compatibility"
+	{
+		"category" "2"
+		"steamos_compatibility" "2"
+		"test_timestamp" "1733270400"
+		"tested_build_id" "5172789"
+		"tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_TextInputDoesNotAutomaticallyInvokesKeyboard"
+			}
+			"1"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_DefaultControllerConfigFullyFunctional"
+			}
+			"2"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_ControllerGlyphsMatchDeckDevice"
+			}
+			"3"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_InterfaceTextIsLegible"
+			}
+			"4"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_DefaultConfigurationIsPerformant"
+			}
+			"5"
+			{
+				"display" "1"
+				"token" "#SteamDeckVerified_TestResult_ExternalControllersNotSupportedPrimaryPlayer"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamOS_TestResult_GameStartupFunctional"
+			}
+			"1"
+			{
+				"display" "1"
+				"token" "#SteamOS_TestResult_TextInputDoesNotAutomaticallyInvokesKeyboard"
+			}
+			"2"
+			{
+				"display" "1"
+				"token" "#SteamOS_TestResult_ExternalControllersNotSupportedPrimaryPlayer"
+			}
+		}
+		"configuration"
+		{
+			"supported_input" "gamepad"
+			"requires_manual_keyboard_invoke" "1"
+			"requires_non_controller_launcher_nav" "0"
+			"primary_player_is_controller_slot_0" "1"
+			"non_deck_display_glyphs" "0"
+			"small_text" "0"
+			"requires_internet_for_setup" "0"
+			"requires_internet_for_singleplayer" "0"
+			"recommended_runtime" "proton-9.0-3RC"
+			"requires_h264" "0"
+			"requires_voice_files" "0"
+			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "0"
+		}
+	}
+	"controller_support" "full"
+	"small_capsule"
+	{
+		"english" "capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_logo" "en"
+		"logo_position"
+		{
+			"pinned_position" "BottomLeft"
+			"width_pct" "30.29566557952444"
+			"height_pct" "55.86043448547469"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "library_hero.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_hero_2x.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "logo.png"
+			}
+			"logo_position"
+			{
+				"pinned_position" "BottomLeft"
+				"width_pct" "30.29566557952444"
+				"height_pct" "55.86043448547469"
+			}
+		}
+	}
+	"store_asset_mtime" "1747682587"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "Hangar 13"
+		}
+		"1"
+		{
+			"type" "developer"
+			"name" "D3T"
+		}
+		"2"
+		{
+			"type" "publisher"
+			"name" "2K"
+		}
+		"3"
+		{
+			"type" "franchise"
+			"name" "Mafia"
+		}
+	}
+	"primary_genre" "25"
+	"genres"
+	{
+		"0" "1"
+		"1" "25"
+	}
+	"category"
+	{
+		"category_2" "1"
+		"category_22" "1"
+		"category_28" "1"
+		"category_45" "1"
+		"category_46" "1"
+		"category_62" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"french"
+		{
+			"supported" "true"
+			"subtitles" "true"
+			"full_audio" "true"
+		}
+		"italian"
+		{
+			"supported" "true"
+			"subtitles" "true"
+			"full_audio" "true"
+		}
+		"german"
+		{
+			"supported" "true"
+			"subtitles" "true"
+			"full_audio" "true"
+		}
+		"spanish"
+		{
+			"supported" "true"
+			"subtitles" "true"
+			"full_audio" "true"
+		}
+		"czech"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"japanese"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"polish"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"brazilian"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"russian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"schinese"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"latam"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"tchinese"
+		{
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1589904000"
+	"community_visible_stats" "1"
+	"community_hub_visible" "1"
+	"gameid" "1030830"
+	"content_descriptors_including_dlc"
+	{
+		"0" "1"
+		"1" "2"
+		"2" "5"
+	}
+	"store_tags"
+	{
+		"0" "19"
+		"1" "21"
+		"2" "6378"
+		"3" "1695"
+		"4" "1742"
+		"5" "12095"
+		"6" "6650"
+		"7" "4667"
+		"8" "4182"
+		"9" "1697"
+		"10" "3814"
+		"11" "4345"
+		"12" "6052"
+		"13" "1774"
+		"14" "4166"
+		"15" "1756"
+		"16" "5611"
+		"17" "1693"
+		"18" "4106"
+		"19" "5708"
+	}
+	"review_score" "6"
+	"review_percentage" "72"
+}
+"extended"
+{
+	"developer" "Hangar 13"
+	"publisher" "2K"
+	"homepage" "https://mafia.2k.com/"
+}
+"config"
+{
+	"installdir" "Mafia II Definitive Edition"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "pc/Mafia II Definitive Edition.exe"
+			"workingdir" "pc"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+			}
+		}
+		"1"
+		{
+			"executable" "pc\\Mafia2Launcher\\Launcher.exe"
+			"workingdir" "pc\\Mafia2Launcher"
+			"type" "option2"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+			}
+			"description_loc"
+			{
+				"english" "Mafia II Definitive Edition Launcher"
+			}
+			"description" "Mafia II Definitive Edition Launcher"
+		}
+		"2"
+		{
+			"executable" "\\2KLauncher\\LauncherPatcher.exe"
+			"workingdir" "pc"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "newtest"
+			}
+			"description_loc"
+			{
+				"english" "2K Launcher"
+			}
+			"description" "2K Launcher"
+		}
+	}
+}
+"depots"
+{
+	"baselanguages" "english,german,french,italian,koreana,spanish,schinese,tchinese,russian,japanese,polish,czech,brazilian,latam"
+	"1030831"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "7075325167535131973"
+				"size" "47163510770"
+				"download" "37477823344"
+			}
+		}
+	}
+	"1523211"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "5488617169383930545"
+				"size" "80"
+				"download" "128"
+			}
+		}
+		"depotfromapp" "1523210"
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "5172789"
+			"timeupdated" "1592496320"
+		}
+	}
+	"privatebranches" "1"
+}
+"_missing_token" "False"
+"_change_number" "29339362"
+"_sha" "299f6e26b1e9e187cf29c7bf589b39ab2538efe8"
+"_size" "8005"
