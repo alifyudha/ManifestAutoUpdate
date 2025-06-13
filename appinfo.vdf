@@ -1,0 +1,545 @@
+"appid" "1846380"
+"common"
+{
+	"name" "Need for Speed™ Unbound"
+	"type" "Game"
+	"releasestate" "released"
+	"oslist" "windows"
+	"osarch" "64"
+	"osextended" ""
+	"languages"
+	{
+		"english" "1"
+		"german" "1"
+		"french" "1"
+		"italian" "1"
+		"koreana" "1"
+		"spanish" "1"
+		"schinese" "1"
+		"tchinese" "1"
+		"japanese" "1"
+		"polish" "1"
+		"arabic" "1"
+		"brazilian" "1"
+	}
+	"eulas"
+	{
+		"0"
+		{
+			"id" "1846380_eula_1"
+			"name" "Need for Speed™ Unbound EULA"
+			"url" "https://store.steampowered.com//eula/1846380_eula_1"
+		}
+	}
+	"name_localized"
+	{
+		"tchinese" "《極速快感™：桀驁不馴》"
+		"schinese" "《极品飞车™：不羁》"
+	}
+	"icon" "c409703ef3603843ed93e80e3d5a5df96c50a4ec"
+	"clienttga" "60cbade50335af2ee7ccfaa328008188bff3fa89"
+	"clienticon" "3c2d64cd1a5b593965af197a539a21c57db2208b"
+	"exfgls" "1"
+	"steam_deck_compatibility"
+	{
+		"category" "1"
+		"steamos_compatibility" "1"
+		"test_timestamp" "1686960000"
+		"tested_build_id" "10729840"
+		"tests"
+		{
+			"0"
+			{
+				"display" "2"
+				"token" "#SteamDeckVerified_TestResult_SteamOSDoesNotSupport"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "2"
+				"token" "#SteamOS_TestResult_SteamOSDoesNotSupport"
+			}
+		}
+		"configuration"
+		{
+			"supported_input" "gamepad"
+			"requires_manual_keyboard_invoke" "0"
+			"requires_non_controller_launcher_nav" "1"
+			"primary_player_is_controller_slot_0" "0"
+			"non_deck_display_glyphs" "0"
+			"small_text" "0"
+			"requires_internet_for_setup" "1"
+			"requires_internet_for_singleplayer" "0"
+			"recommended_runtime" "proton-experimental"
+			"requires_h264" "0"
+			"requires_voice_files" "0"
+			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "0"
+		}
+	}
+	"controllertagwizard" "1"
+	"controller_support" "partial"
+	"small_capsule"
+	{
+		"english" "capsule_231x87.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_logo" "en"
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "library_hero.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_hero_2x.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "logo.png"
+			}
+			"image2x"
+			{
+				"english" "logo_2x.png"
+			}
+		}
+	}
+	"store_asset_mtime" "1748950244"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "Criterion Games"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "Electronic Arts"
+		}
+		"2"
+		{
+			"type" "franchise"
+			"name" "Need for Speed"
+		}
+	}
+	"primary_genre" "9"
+	"genres"
+	{
+		"0" "1"
+		"1" "9"
+	}
+	"category"
+	{
+		"category_2" "1"
+		"category_1" "1"
+		"category_49" "1"
+		"category_27" "1"
+		"category_22" "1"
+		"category_61" "1"
+		"category_18" "1"
+		"category_69" "1"
+		"category_70" "1"
+		"category_74" "1"
+		"category_75" "1"
+		"category_78" "1"
+		"category_72" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"french"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"italian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"german"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"spanish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"arabic"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"japanese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"koreana"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"polish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"brazilian"
+		{
+			"supported" "true"
+		}
+		"schinese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"tchinese"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1669968000"
+	"community_visible_stats" "1"
+	"community_hub_visible" "1"
+	"gameid" "1846380"
+	"store_tags"
+	{
+		"0" "699"
+		"1" "3859"
+		"2" "1695"
+		"3" "19"
+		"4" "1644"
+		"5" "4182"
+		"6" "4747"
+		"7" "4102"
+		"8" "7481"
+		"9" "1773"
+		"10" "3843"
+		"11" "597"
+		"12" "599"
+		"13" "701"
+		"14" "4166"
+		"15" "21"
+		"16" "4085"
+		"17" "1621"
+		"18" "3934"
+		"19" "10816"
+	}
+	"review_score" "5"
+	"review_percentage" "60"
+	"mastersubs_granting_app" "1289670"
+}
+"extended"
+{
+	"allowmicrotxnfromrestrictedcountries" "0"
+	"microtxnrestrictedcountries" "RU,BY"
+	"developer" "Criterion Games"
+	"publisher" "Electronic Arts"
+	"homepage" "https://www.ea.com/games/need-for-speed/need-for-speed-unbound/"
+	"aliases" "NFS"
+	"listofdlc" "1958731,1982930,2055280,2057870,2057880,2075010,2298540,2339280,2339281,2339282,2339283,2339284,2339285,2339286,2339287,2339288,2566530,2566540,2749280,2749290,2856150,2856160,2856170,2856180,2856190,2856200,2926920,2926930,2926940,3145990,3156380"
+	"dlcavailableonstore" "1"
+}
+"config"
+{
+	"installdir" "Excalibur"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "link2ea://launchgame/1846380\?platform=steam&theme=excalibur"
+		}
+	}
+}
+"depots"
+{
+	"baselanguages" "english,german,french,italian,koreana,spanish,schinese,tchinese,japanese,polish,arabic,brazilian"
+	"228988"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228990"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"1846381"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "7647014072852043009"
+				"size" "36768985601"
+				"download" "32931312496"
+			}
+		}
+	}
+	"1846382"
+	{
+		"config"
+		{
+			"language" "english"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1472267441728016020"
+				"size" "502799138"
+				"download" "467103264"
+			}
+		}
+	}
+	"1846383"
+	{
+		"config"
+		{
+			"language" "german"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1783040453177069942"
+				"size" "1017536253"
+				"download" "939499920"
+			}
+		}
+	}
+	"1846384"
+	{
+		"config"
+		{
+			"language" "french"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1480830455007907564"
+				"size" "1006499145"
+				"download" "927410336"
+			}
+		}
+	}
+	"1846385"
+	{
+		"config"
+		{
+			"language" "italian"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "3625538950441187024"
+				"size" "1050205657"
+				"download" "972347504"
+			}
+		}
+	}
+	"1846386"
+	{
+		"config"
+		{
+			"language" "koreana"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "7070893792333414575"
+				"size" "503566355"
+				"download" "467974192"
+			}
+		}
+	}
+	"1846387"
+	{
+		"config"
+		{
+			"language" "spanish"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "7964705822508408783"
+				"size" "1060758546"
+				"download" "982652240"
+			}
+		}
+	}
+	"1846388"
+	{
+		"config"
+		{
+			"language" "schinese"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "3121867301966640492"
+				"size" "1008207505"
+				"download" "937674432"
+			}
+		}
+	}
+	"1846389"
+	{
+		"config"
+		{
+			"language" "tchinese"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "2557560832742795434"
+				"size" "503344651"
+				"download" "467977216"
+			}
+		}
+	}
+	"1958732"
+	{
+		"config"
+		{
+			"language" "japanese"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "83172270588436798"
+				"size" "1041118218"
+				"download" "958686976"
+			}
+		}
+	}
+	"1958733"
+	{
+		"config"
+		{
+			"language" "polish"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8581036103216924404"
+				"size" "1026183795"
+				"download" "947527792"
+			}
+		}
+	}
+	"1958734"
+	{
+		"config"
+		{
+			"language" "arabic"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "71100374980075904"
+				"size" "503475323"
+				"download" "468003200"
+			}
+		}
+	}
+	"1958735"
+	{
+		"config"
+		{
+			"language" "brazilian"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8415440343118819700"
+				"size" "503314509"
+				"download" "467997152"
+			}
+		}
+	}
+	"3340991"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "4706744716523911097"
+				"size" "234648127"
+				"download" "234136240"
+			}
+		}
+		"depotfromapp" "3340990"
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "16690907"
+			"timeupdated" "1733994197"
+		}
+	}
+	"privatebranches" "1"
+}
+"_missing_token" "False"
+"_change_number" "29469070"
+"_sha" "a811b924c09e0fcaa70ba22ac0afac810aeee0d1"
+"_size" "8840"
