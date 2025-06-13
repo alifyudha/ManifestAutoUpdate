@@ -1,1 +1,288 @@
-{"9965417569": {"app": [2622380], "update": 1748744979, "enable": false, "status": 5}, "platinummonsterbeatz2": {"app": [10, 80, 100, 211, 215, 218, 240, 730, 740, 493490, 227300, 421800, 1948160, 322170, 244210, 332800, 477160, 239140, 350570, 284160, 1293830, 238320, 414700, 1609080, 629520, 2381590, 2878420, 3097560, 271590, 3240220], "update": 1749780607, "enable": true}, "ridika61": {"app": [730, 740, 1995930, 1876070], "update": 1749780468, "enable": true}, "k8ef0k53f": {"app": [2531310], "update": 1749780458, "enable": true}, "gm462580": {"app": [1490890, 307690], "update": 1749780482, "enable": true}, "DecorousThoughtlessWhale": {"app": [], "update": 0, "enable": true}, "gamesherodetroit": {"app": [1222140, 1769090], "update": 1749693933, "enable": false, "status": 43}, "rusdepj": {"app": [271590, 3240220, 1347030, 1091500, 1436830, 1496850, 1522530, 50620, 462780, 1928940, 3446850, 1054650], "update": 1749780474, "enable": true}, "iraffem14913043billi": {"app": [], "update": 1749780455, "enable": true}, "bibi2paris": {"app": [4000, 252490, 391750], "update": 0, "enable": false, "status": 5}, "gv5sf7ph5tv4": {"app": [], "update": 0, "enable": false, "status": 63}, "exneydabro1972": {"app": [212580, 582660], "update": 1749780463, "enable": true}, "necros13579": {"app": [298110], "update": 0, "enable": false, "status": 63}, "kokoteska09": {"app": [1245620, 1069740], "update": 1748745008, "enable": false, "status": 63}, "redh00dgaming300gier": {"app": [6880, 20900, 12100, 12110, 12120, 12230, 12240, 12250, 8190, 3700, 220240], "update": 0, "enable": false, "status": 5}, "red_dead_profix": {"app": [1174180, 292030, 345430, 6830, 1143930], "update": 1749780492, "enable": true}, "jooker702": {"app": [346110, 376030, 407530, 440900, 931180, 431960, 529180, 239140, 350570, 1149460, 254700], "update": 1749780572, "enable": true}, "faryalgillani558": {"app": [924140, 271590, 3240220], "update": 1749780470, "enable": true}, "malao_on_top": {"app": [359550, 623990, 739630, 1222680, 518790, 244210], "update": 1749780505, "enable": true}, "lpuqn62765": {"app": [1627720], "update": 1749783832, "enable": true}}
+{
+  "9965417569": {
+    "app": [
+      2622380
+    ],
+    "update": 1748744979,
+    "enable": false,
+    "status": 5
+  },
+  "platinummonsterbeatz2": {
+    "app": [
+      10,
+      80,
+      100,
+      211,
+      215,
+      218,
+      240,
+      730,
+      740,
+      493490,
+      227300,
+      421800,
+      1948160,
+      322170,
+      244210,
+      332800,
+      477160,
+      239140,
+      350570,
+      284160,
+      1293830,
+      238320,
+      414700,
+      1609080,
+      629520,
+      2381590,
+      2878420,
+      3097560,
+      271590,
+      3240220
+    ],
+    "update": 1749780607,
+    "enable": true
+  },
+  "ridika61": {
+    "app": [
+      730,
+      740,
+      1995930,
+      1876070
+    ],
+    "update": 1749780468,
+    "enable": true
+  },
+  "k8ef0k53f": {
+    "app": [
+      2531310
+    ],
+    "update": 1749780458,
+    "enable": true
+  },
+  "gm462580": {
+    "app": [
+      1490890,
+      307690
+    ],
+    "update": 1749780482,
+    "enable": true
+  },
+  "DecorousThoughtlessWhale": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "gamesherodetroit": {
+    "app": [
+      1222140,
+      1769090
+    ],
+    "update": 1749693933,
+    "enable": false,
+    "status": 43
+  },
+  "rusdepj": {
+    "app": [
+      271590,
+      3240220,
+      1347030,
+      1091500,
+      1436830,
+      1496850,
+      1522530,
+      50620,
+      462780,
+      1928940,
+      3446850,
+      1054650
+    ],
+    "update": 1749780474,
+    "enable": true
+  },
+  "iraffem14913043billi": {
+    "app": [],
+    "update": 1749780455,
+    "enable": true
+  },
+  "bibi2paris": {
+    "app": [
+      4000,
+      252490,
+      391750
+    ],
+    "update": 0,
+    "enable": false,
+    "status": 5
+  },
+  "gv5sf7ph5tv4": {
+    "app": [],
+    "update": 0,
+    "enable": false,
+    "status": 63
+  },
+  "exneydabro1972": {
+    "app": [
+      212580,
+      582660
+    ],
+    "update": 1749780463,
+    "enable": true
+  },
+  "necros13579": {
+    "app": [
+      298110
+    ],
+    "update": 0,
+    "enable": false,
+    "status": 63
+  },
+  "kokoteska09": {
+    "app": [
+      1245620,
+      1069740
+    ],
+    "update": 1748745008,
+    "enable": false,
+    "status": 63
+  },
+  "redh00dgaming300gier": {
+    "app": [
+      6880,
+      20900,
+      12100,
+      12110,
+      12120,
+      12230,
+      12240,
+      12250,
+      8190,
+      3700,
+      220240
+    ],
+    "update": 0,
+    "enable": false,
+    "status": 5
+  },
+  "red_dead_profix": {
+    "app": [
+      1174180,
+      292030,
+      345430,
+      6830,
+      1143930
+    ],
+    "update": 1749780492,
+    "enable": true
+  },
+  "jooker702": {
+    "app": [
+      346110,
+      376030,
+      407530,
+      440900,
+      931180,
+      431960,
+      529180,
+      239140,
+      350570,
+      1149460,
+      254700
+    ],
+    "update": 1749780572,
+    "enable": true
+  },
+  "faryalgillani558": {
+    "app": [
+      924140,
+      271590,
+      3240220
+    ],
+    "update": 1749780470,
+    "enable": true
+  },
+  "malao_on_top": {
+    "app": [
+      359550,
+      623990,
+      739630,
+      1222680,
+      518790,
+      244210
+    ],
+    "update": 1749780505,
+    "enable": true
+  },
+  "lpuqn62765": {
+    "app": [
+      1627720
+    ],
+    "update": 1749783832,
+    "enable": true
+  },
+  "djaja131415": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "realkiwi3484": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "SKKG65975": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "godofwarsteam123": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "on3lie4": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "babykeems": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "kungterdicon1975": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "exqgy03440": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "pf7yq3uu8ry9": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "axelturba3660": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "crazycatwastaken": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "Od8Xb8Xf4Iu5": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  },
+  "mbig4912": {
+    "app": [],
+    "update": 0,
+    "enable": true
+  }
+}
