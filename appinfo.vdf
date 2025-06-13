@@ -1,0 +1,208 @@
+"appid" "1054790"
+"common"
+{
+	"name" "Elon Must - Road to Respect"
+	"type" "Game"
+	"releasestate" "released"
+	"oslist" "windows"
+	"osarch" ""
+	"clienttga" "f12af69ac632b2371eefeb3047f7db405d3b96d2"
+	"logo" "0decdfd3cf62e96891cf0db534e371d10cc85110"
+	"logo_small" "0decdfd3cf62e96891cf0db534e371d10cc85110_thumb"
+	"icon" "ccc1421f325718dc005f6bf98954a7b3ae9678ab"
+	"clienticon" "561301d4f6c5de81f7589a64acf6b0aa0486f26d"
+	"metacritic_name" "Elon Must - Road to Respect"
+	"small_capsule"
+	{
+		"english" "capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_logo" "en"
+		"logo_position"
+		{
+			"pinned_position" "CenterCenter"
+			"width_pct" "50"
+			"height_pct" "100"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "library_hero.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_hero_2x.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "logo.png"
+			}
+			"image2x"
+			{
+				"english" "logo_2x.png"
+			}
+			"logo_position"
+			{
+				"pinned_position" "CenterCenter"
+				"width_pct" "50"
+				"height_pct" "100"
+			}
+		}
+	}
+	"store_asset_mtime" "1667030969"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "Ruskija Game Experience"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "Morning Shift Studios"
+		}
+	}
+	"primary_genre" "25"
+	"genres"
+	{
+		"0" "1"
+		"1" "25"
+		"2" "23"
+	}
+	"category"
+	{
+		"category_2" "1"
+		"category_22" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1555574334"
+	"community_visible_stats" "1"
+	"community_hub_visible" "1"
+	"gameid" "1054790"
+	"store_tags"
+	{
+		"0" "10397"
+		"1" "1625"
+		"2" "19"
+		"3" "3871"
+		"4" "492"
+		"5" "1666"
+		"6" "21"
+		"7" "5379"
+		"8" "5547"
+		"9" "3798"
+		"10" "3964"
+		"11" "1755"
+		"12" "1719"
+		"13" "4004"
+		"14" "13190"
+		"15" "4295"
+		"16" "4136"
+		"17" "4115"
+		"18" "5923"
+		"19" "1673"
+	}
+	"review_score" "5"
+	"review_percentage" "62"
+}
+"extended"
+{
+	"developer" "Ruskija Game Experience"
+	"publisher" "Morning Shift Studios"
+}
+"config"
+{
+	"installdir" "Elon Must - Road to Respect"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "Road to Respect.exe"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+			}
+		}
+	}
+}
+"depots"
+{
+	"228986"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228990"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"1054791"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "5225407240422505181"
+				"size" "224422578"
+				"download" "37127776"
+			}
+		}
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "3695774"
+			"timeupdated" "1554027880"
+		}
+	}
+}
+"_missing_token" "False"
+"_change_number" "28101945"
+"_sha" "39b7993b2e71c4653ccb361d2ff85d963993d78d"
+"_size" "3266"
