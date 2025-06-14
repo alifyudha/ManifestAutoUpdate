@@ -1,0 +1,330 @@
+"appid" "32500"
+"common"
+{
+	"name" "STAR WARS™: The Force Unleashed™ II"
+	"clienticon" "58451e5990741b7ce12754f99a32143de47206f2"
+	"clienttga" "c993397d1b95c2f8b7eb2a0dd6d122aeddd6e989"
+	"icon" "88a3ef4f5cd4bbad37df743818bf379aaff014e8"
+	"logo" "3256757659e8d38690d382324f9f31dc64845fc8"
+	"logo_small" "3256757659e8d38690d382324f9f31dc64845fc8_thumb"
+	"oslist" "windows"
+	"eulas"
+	{
+		"0"
+		{
+			"id" "32500_eula_0"
+			"name" "STAR WARS™: The Force Unleashed™ II EULA"
+			"url" "http://store.steampowered.com//eula/32500_eula_0"
+		}
+	}
+	"type" "game"
+	"steam_deck_compatibility"
+	{
+		"category" "1"
+		"steamos_compatibility" "1"
+		"test_timestamp" "1646956800"
+		"tested_build_id" "19306"
+		"tests"
+		{
+			"0"
+			{
+				"display" "2"
+				"token" "#SteamDeckVerified_TestResult_SteamOSDoesNotSupport"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "2"
+				"token" "#SteamOS_TestResult_SteamOSDoesNotSupport"
+			}
+		}
+		"configuration"
+		{
+			"supported_input" "gamepad"
+			"requires_manual_keyboard_invoke" "1"
+			"requires_non_controller_launcher_nav" "0"
+			"primary_player_is_controller_slot_0" "1"
+			"non_deck_display_glyphs" "0"
+			"small_text" "0"
+			"requires_internet_for_setup" "0"
+			"requires_internet_for_singleplayer" "0"
+			"recommended_runtime" "proton-7.0-1"
+			"requires_h264" "0"
+			"requires_voice_files" "0"
+			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "0"
+		}
+	}
+	"metacritic_name" "Star Wars: The Force Unleashed II"
+	"controllertagwizard" "1"
+	"controller_support" "partial"
+	"small_capsule"
+	{
+		"english" "capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "709889a1d64bfc8a4c2aaa92bd5859286970daf7/library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "709889a1d64bfc8a4c2aaa92bd5859286970daf7/library_600x900_2x.jpg"
+			}
+		}
+	}
+	"store_screenshot" "ss_73de811e212c77db4b1b5d9ae96ce0be29b8c118.jpg"
+	"store_asset_mtime" "1741729209"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "Aspyr Studios"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "LucasArts"
+		}
+		"2"
+		{
+			"type" "publisher"
+			"name" "Lucasfilm"
+		}
+		"3"
+		{
+			"type" "publisher"
+			"name" "Disney"
+		}
+		"4"
+		{
+			"type" "franchise"
+			"name" "Star Wars"
+		}
+	}
+	"primary_genre" "1"
+	"genres"
+	{
+		"0" "1"
+	}
+	"category"
+	{
+		"category_2" "1"
+		"category_18" "1"
+		"category_23" "1"
+		"category_62" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"french"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"german"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"italian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"spanish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"polish"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"russian"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+	}
+	"original_release_date" "1288076400"
+	"metacritic_score" "59"
+	"metacritic_fullurl" "https://www.metacritic.com/game/pc/star-wars-the-force-unleashed-ii\?ftag=MCD-06-10aaa1f"
+	"community_hub_visible" "1"
+	"gameid" "32500"
+	"store_tags"
+	{
+		"0" "19"
+		"1" "4182"
+		"2" "1646"
+		"3" "1697"
+		"4" "3942"
+		"5" "21"
+		"6" "7481"
+		"7" "1742"
+		"8" "1684"
+		"9" "1755"
+		"10" "122"
+		"11" "4166"
+		"12" "4026"
+		"13" "3968"
+	}
+	"review_score" "5"
+	"review_percentage" "63"
+}
+"extended"
+{
+	"developer" "Aspyr Studios"
+	"gamedir" "Star Wars The Force Unleashed 2"
+	"homepage" "http://www.theforceunleashed.com"
+	"icon" ""
+	"installscript" "32500_install.vdf"
+	"languages" "english,french,german,italian,spanish,russian,polish"
+	"noservers" "1"
+	"order" "1"
+	"primarycache" "32501"
+	"serverbrowsername" ""
+	"state" "eStateAvailable"
+	"publisher" "LucasArts"
+	"gamemanualurl" "https://store.steampowered.com/manual/32500/"
+}
+"config"
+{
+	"contenttype" "3"
+	"installdir" "Star Wars The Force Unleashed 2"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "SWTFU2.exe"
+		}
+	}
+}
+"depots"
+{
+	"228982"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228990"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"229000"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"32501"
+	{
+		"systemdefined" "1"
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "7046856841289178616"
+				"size" "10422449558"
+				"download" "0"
+			}
+		}
+	}
+	"32502"
+	{
+		"config"
+		{
+			"language" "russian"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "2422242795659314641"
+				"size" "132995658"
+				"download" "0"
+			}
+		}
+	}
+	"32503"
+	{
+		"config"
+		{
+			"language" "polish"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "7278927256669937519"
+				"size" "129094772"
+				"download" "0"
+			}
+		}
+	}
+	"overridescddb" "1"
+	"baselanguages" "english,french,german,italian,spanish,russian,polish"
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "19306"
+			"timeupdated" "1462579756"
+		}
+	}
+	"privatebranches" "1"
+}
+"ufs"
+{
+	"quota" "1000000"
+	"maxnumfiles" "100"
+	"savefiles"
+	{
+		"0"
+		{
+			"root" "WinMyDocuments"
+			"path" "LucasArts/Star Wars The Force Unleashed 2/Saves"
+			"pattern" "*.*"
+		}
+	}
+}
+"_missing_token" "False"
+"_change_number" "29058544"
+"_sha" "af196dae8166a40918b336d930adeb9538905a84"
+"_size" "5866"
