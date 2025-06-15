@@ -1,0 +1,912 @@
+"appid" "770720"
+"common"
+{
+	"name" "Hunt: Showdown 1896 (Test Server)"
+	"type" "Game"
+	"releasestate" "released"
+	"logo" "449b63e96d9563899399d7fc2461e77eeec71870"
+	"logo_small" "449b63e96d9563899399d7fc2461e77eeec71870_thumb"
+	"icon" "5b6e6df3d86da34a061ef77113483a54317b01e8"
+	"oslist" "windows"
+	"osarch" "64"
+	"clienttga" "811af0a1f53d77319154d8bd0959714057e037b7"
+	"clienticon" "9ac2aa2b6e6d3d98b05e32702a64d5e3e8b2d75a"
+	"languages"
+	{
+		"english" "1"
+		"german" "1"
+		"french" "1"
+		"italian" "1"
+		"spanish" "1"
+		"schinese" "1"
+		"russian" "1"
+		"japanese" "1"
+		"portuguese" "1"
+		"polish" "1"
+		"turkish" "1"
+	}
+	"name_localized"
+	{
+		"schinese" "猎杀：对决 1896（测试服)"
+	}
+	"content_descriptors"
+	{
+		"0" "5"
+	}
+	"steam_deck_compatibility"
+	{
+		"category" "2"
+		"steamos_compatibility" "2"
+		"test_timestamp" "1734134400"
+		"tested_build_id" "11405781"
+		"tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_DefaultControllerConfigNotFullyFunctional"
+			}
+			"1"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_ControllerGlyphsDoNotMatchDeckDevice"
+			}
+			"2"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_TextInputDoesNotAutomaticallyInvokesKeyboard"
+			}
+			"3"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_InterfaceTextIsNotLegible"
+			}
+			"4"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_DefaultConfigurationIsPerformant"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamOS_TestResult_GameStartupFunctional"
+			}
+			"1"
+			{
+				"display" "1"
+				"token" "#SteamOS_TestResult_TextInputDoesNotAutomaticallyInvokesKeyboard"
+			}
+			"2"
+			{
+				"display" "1"
+				"token" "#SteamOS_TestResult_DefaultControllerConfigNotFullyFunctional"
+			}
+		}
+		"configuration"
+		{
+			"supported_input" "gamepad"
+			"requires_manual_keyboard_invoke" "1"
+			"requires_non_controller_launcher_nav" "0"
+			"primary_player_is_controller_slot_0" "0"
+			"non_deck_display_glyphs" "1"
+			"small_text" "1"
+			"requires_internet_for_setup" "0"
+			"requires_internet_for_singleplayer" "0"
+			"recommended_runtime" "proton-9.0-3RC"
+			"requires_h264" "0"
+			"requires_voice_files" "0"
+			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "0"
+		}
+	}
+	"metacritic_name" "Hunt: Showdown (Test Server)"
+	"small_capsule"
+	{
+		"english" "capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_logo" "en"
+		"logo_position"
+		{
+			"pinned_position" "BottomLeft"
+			"width_pct" "29.238885222487184"
+			"height_pct" "100"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "library_hero.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_hero_2x.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "logo.png"
+			}
+			"logo_position"
+			{
+				"pinned_position" "BottomLeft"
+				"width_pct" "29.238885222487184"
+				"height_pct" "100"
+			}
+		}
+	}
+	"store_asset_mtime" "1653314075"
+	"associations"
+	{
+	}
+	"primary_genre" "0"
+	"category"
+	{
+		"category_45" "1"
+		"category_46" "1"
+		"category_62" "1"
+	}
+	"steam_release_date" "1522940400"
+	"community_visible_stats" "1"
+	"community_hub_visible" "1"
+	"gameid" "770720"
+	"content_descriptors_including_dlc"
+	{
+		"0" "5"
+	}
+	"store_tags"
+	{
+	}
+	"review_score" "5"
+	"review_percentage" "46"
+}
+"config"
+{
+	"installdir" "Hunt Showdown (Test Server)"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stage_external +sys_dump_type 2"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 backend_test 1161_rc 1.16.2_qa ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "PCSTG"
+			}
+			"description" "PCSTG"
+		}
+		"9"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings bla -online_server 10.53.2.9 -online_server_port 11000 +sys_dump_type 3"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 latest ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "MPQA1"
+			}
+			"description" "MPQA1"
+		}
+		"11"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings bla -online_server 192.168.19.180 -online_server_port 11000 +sys_dump_type 3"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 latest latest_lwp ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "MPQA2"
+			}
+			"description" "MPQA2"
+		}
+		"14"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stage"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 latest teamtest latest_lwp ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "STGDSN"
+			}
+			"description" "STGDSN"
+		}
+		"16"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stage_external +sys_dump_type 2 +lwp_authorizeToggling 1"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "lightweight_profiler\t"
+			}
+			"description_loc"
+			{
+				"english" "lightweight_profiler\t"
+			}
+			"description" "lightweight_profiler\t"
+		}
+		"25"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings blah -online_server frwp3hntdemosrv -online_server_port 61088 +sys_dump_type 3 +online_websvc_enable_tls 0"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "MPQA3 (No EAC)"
+			}
+			"description" "MPQA3 (No EAC)"
+		}
+		"26"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings blah -online_server 192.168.11.142 -online_server_port 11000 +sys_dump_type 3 +online_websvc_enable_tls 0"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "MPQA4 (No EAC)"
+			}
+			"description" "MPQA4 (No EAC)"
+		}
+		"27"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings blah -online_server 192.168.11.142 -online_server_port 11000 +sys_dump_type 3 +online_websvc_enable_tls 0"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "MPQA5"
+			}
+			"description" "MPQA5"
+		}
+		"28"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings blah -online_server frwp1hntdemosrv -online_server_port 61088 +sys_dump_type 3 +online_websvc_enable_tls 0"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "MPQA MAIN"
+			}
+			"description" "MPQA MAIN"
+		}
+		"30"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage2 +sys_dump_type 3 +online_news_server_port 5011"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 qa_testroom_3 ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "PCSTG2"
+			}
+			"description" "PCSTG2"
+		}
+		"33"
+		{
+			"executable" "bin\\win_x64_steam_release\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage2"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "externalamd"
+			}
+			"description_loc"
+			{
+				"english" "dev_engine"
+			}
+			"description" "dev_engine"
+		}
+		"34"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stage"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "mkt_recording"
+			}
+			"description_loc"
+			{
+				"english" "mkt_recording"
+			}
+			"description" "mkt_recording"
+		}
+		"35"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stagealpha +sys_dump_type 2"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "alpha_test"
+			}
+			"description_loc"
+			{
+				"english" "STGALPHA"
+			}
+			"description" "STGALPHA"
+		}
+		"36"
+		{
+			"executable" "bin\\win_x64_steam_release\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "dev_engine"
+			}
+			"description_loc"
+			{
+				"english" "PCSTAGE"
+			}
+			"description" "PCSTAGE"
+		}
+		"40"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "externalnvidia"
+			}
+			"description_loc"
+			{
+				"english" "externalnv"
+			}
+			"description" "externalnv"
+		}
+		"41"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings dailymain"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom"
+			}
+			"description_loc"
+			{
+				"english" "daily_main"
+			}
+			"description" "daily_main"
+		}
+		"42"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stagealpha"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "117_external"
+			}
+		}
+		"43"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "perf_testing"
+			}
+		}
+		"44"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stagealpha +ui_input_debug_cursor_scopes 1 +ui_debug_layout_loading 1 +log_writetofileverbosity 3 +sys_customCrashHandlerAttribute playtest +ui_summary_screen_flow_debug 1 +ui_popup_checklist_debug 1 +ui_summary_screen_debug 1 +tlm_hunt_enable 1 +tlm_enable_perf gmpu -tlm_hunt_id PlaytestPC +g_perf_budget_gpu 1"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "closed_beta_test 201_test external_playtest tc_playtest internal_playtest navmesh current"
+			}
+			"description_loc"
+			{
+				"english" "alpha_pt"
+			}
+			"description" "alpha_pt"
+		}
+		"46"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage2 +sys_dump_type 3 +online_news_server_port 5011"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "ratings_pegi  ratings_usk ratings_acb"
+			}
+			"description_loc"
+			{
+				"english" "Branch of Age Rating Submission"
+			}
+			"description" "Branch of Age Rating Submission"
+		}
+		"49"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings bla -online_server cs1-stg-lw-eu.huntshowdown.com -online_server_port 61088"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "backend_2.0"
+			}
+		}
+		"52"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage2 +sys_dump_type 3 +online_news_server_port 5011 +log_writetofileverbosity 4"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "lionbridge_qa"
+			}
+			"description_loc"
+			{
+				"english" "Ext_test"
+			}
+			"description" "Ext_test"
+		}
+		"53"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "be_2.0"
+			}
+			"description_loc"
+			{
+				"english" "be_2.0"
+			}
+			"description" "be_2.0"
+		}
+		"55"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stage_cloud"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "cloud_test"
+			}
+			"description_loc"
+			{
+				"english" "main_test"
+			}
+			"description" "main_test"
+		}
+		"56"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "external_tech_test"
+			}
+			"description_loc"
+			{
+				"english" "external_tech_test"
+			}
+			"description" "external_tech_test"
+		}
+		"57"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "adhoctest"
+			}
+			"description_loc"
+			{
+				"english" "dlsscheck"
+			}
+			"description" "dlsscheck"
+		}
+		"59"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stagealpha"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "eac_pgo_use"
+			}
+			"description_loc"
+			{
+				"english" "eac_pgo_use"
+			}
+			"description" "eac_pgo_use"
+		}
+		"60"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings yxz -online_server capi-stgdes-asia.huntshowdown.com -online_server_port 61088"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "grac_ratings"
+			}
+			"description_loc"
+			{
+				"english" "grac_ratings"
+			}
+			"description" "grac_ratings"
+		}
+		"61"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stageqa"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom_2 ist-testserver1 ist-testserver2 ist-testserver3"
+			}
+			"description_loc"
+			{
+				"english" "cnqa"
+			}
+			"description" "cnqa"
+		}
+		"62"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage_external +sys_dump_type 3 +log_verbosity 4 +log_writetofileverbosity 4 +vivox_log_enabled 2"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "tencent_qa"
+			}
+			"description_loc"
+			{
+				"english" "Tenc_QA"
+			}
+			"description" "Tenc_QA"
+		}
+		"63"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings dailymain"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "windows_test"
+			}
+			"description_loc"
+			{
+				"english" "windows_test"
+			}
+			"description" "windows_test"
+		}
+		"64"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings stage_external"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "daily_main"
+			}
+			"description_loc"
+			{
+				"english" "main"
+			}
+			"description" "main"
+		}
+		"65"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings bla -online_server frwp5hntdemosrv -online_server_port 11000"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "player_test"
+			}
+			"description_loc"
+			{
+				"english" "player_test"
+			}
+			"description" "player_test"
+		}
+		"66"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings blah -online_server capi-cnstg-useast.huntshowdown.com -online_server_port 61088"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "content_integration"
+			}
+			"description_loc"
+			{
+				"english" "content_integration"
+			}
+			"description" "content_integration"
+		}
+		"67"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings blah -online_server capi-stage-alpha-asia.huntshowdown.com -online_server_port 61092"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "tc_asia_test"
+			}
+			"description_loc"
+			{
+				"english" "tc_asia_test"
+			}
+			"description" "tc_asia_test"
+		}
+		"68"
+		{
+			"executable" "bin\\win_x64\\HuntGame.exe"
+			"arguments" "+online_account_client_settings xyz -online_server capi-cnbeta-useast.huntshowdown.com -online_server_port 61090"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "amd_performance"
+			}
+			"description_loc"
+			{
+				"english" "amd_performance"
+			}
+			"description" "amd_performance"
+		}
+	}
+	"uselaunchcommandline" "1"
+}
+"depots"
+{
+	"baselanguages" "english,german,french,italian,spanish,schinese,russian,japanese,polish,turkish,brazilian"
+	"228985"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228986"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228990"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"229004"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"770721"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1379893961315283906"
+				"size" "584652560"
+				"download" "406174832"
+			}
+		}
+	}
+	"770722"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8452020855376724922"
+				"size" "49193337342"
+				"download" "49572495680"
+			}
+		}
+	}
+	"770723"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "3620962067508636958"
+				"size" "170593326"
+				"download" "171683968"
+			}
+		}
+	}
+	"770724"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1633632636785229434"
+				"size" "0"
+				"download" "0"
+			}
+		}
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "11405781"
+			"timeupdated" "1686560547"
+		}
+	}
+	"privatebranches" "1"
+}
+"_missing_token" "False"
+"_change_number" "29569664"
+"_sha" "de368faf625abe1bec91a0d0d6f4365cc405819f"
+"_size" "19786"
