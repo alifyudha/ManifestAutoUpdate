@@ -1,0 +1,633 @@
+"appid" "594650"
+"common"
+{
+	"name" "Hunt: Showdown 1896"
+	"type" "Game"
+	"releasestate" "released"
+	"oslist" "windows"
+	"osarch" "64"
+	"logo" "7a7f693e439e96ad3d96d67d26bb7f7b96fe3271"
+	"logo_small" "7a7f693e439e96ad3d96d67d26bb7f7b96fe3271_thumb"
+	"icon" "06c70772db40f714537f4d80c11859a68560a6b3"
+	"clienttga" "811af0a1f53d77319154d8bd0959714057e037b7"
+	"clienticon" "9ac2aa2b6e6d3d98b05e32702a64d5e3e8b2d75a"
+	"eulas"
+	{
+		"0"
+		{
+			"id" "594650_eula_0"
+			"name" "Hunt: Showdown EULA"
+			"url" "http://store.steampowered.com//eula/594650_eula_0"
+			"version" "4"
+		}
+	}
+	"languages"
+	{
+		"english" "1"
+		"german" "1"
+		"french" "1"
+		"italian" "1"
+		"spanish" "1"
+		"schinese" "1"
+		"russian" "1"
+		"japanese" "1"
+		"polish" "1"
+		"turkish" "1"
+		"brazilian" "1"
+	}
+	"exfgls" "1"
+	"osextended" ""
+	"name_localized"
+	{
+		"schinese" "猎杀：对决 1896"
+	}
+	"content_descriptors"
+	{
+		"0" "2"
+		"1" "5"
+	}
+	"steam_deck_compatibility"
+	{
+		"category" "2"
+		"steamos_compatibility" "2"
+		"test_timestamp" "1746230400"
+		"tested_build_id" "18009150"
+		"tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_TextInputDoesNotAutomaticallyInvokesKeyboard"
+			}
+			"1"
+			{
+				"display" "3"
+				"token" "#SteamDeckVerified_TestResult_InterfaceTextIsNotLegible"
+			}
+			"2"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_DefaultControllerConfigFullyFunctional"
+			}
+			"3"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_ControllerGlyphsMatchDeckDevice"
+			}
+			"4"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_DefaultConfigurationIsPerformant"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamOS_TestResult_GameStartupFunctional"
+			}
+			"1"
+			{
+				"display" "1"
+				"token" "#SteamOS_TestResult_TextInputDoesNotAutomaticallyInvokesKeyboard"
+			}
+		}
+		"configuration"
+		{
+			"supported_input" "gamepad"
+			"requires_manual_keyboard_invoke" "1"
+			"requires_non_controller_launcher_nav" "0"
+			"primary_player_is_controller_slot_0" "0"
+			"non_deck_display_glyphs" "0"
+			"small_text" "1"
+			"requires_internet_for_setup" "0"
+			"requires_internet_for_singleplayer" "0"
+			"recommended_runtime" "proton-experimental"
+			"requires_h264" "0"
+			"requires_voice_files" "0"
+			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "0"
+		}
+	}
+	"metacritic_name" "Hunt: Showdown"
+	"controller_support" "full"
+	"small_capsule"
+	{
+		"english" "db8d00180552bbcf7068dffda7bf5ce8b4ae0041/capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_logo" "en"
+		"library_header" "en"
+		"logo_position"
+		{
+			"pinned_position" "BottomLeft"
+			"width_pct" "29.749673530888998"
+			"height_pct" "95.4862579471599"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image2x"
+			{
+				"english" "library_hero_2x.jpg"
+			}
+			"image"
+			{
+				"english" "library_hero.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"logo_position"
+			{
+				"pinned_position" "BottomLeft"
+				"width_pct" "29.749673530888998"
+				"height_pct" "95.4862579471599"
+			}
+			"image2x"
+			{
+				"english" "logo_2x.png"
+			}
+			"image"
+			{
+				"english" "logo.png"
+			}
+		}
+		"library_header"
+		{
+			"image"
+			{
+				"english" "library_header.jpg"
+			}
+		}
+	}
+	"store_asset_mtime" "1749829041"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "Crytek"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "Crytek"
+		}
+		"2"
+		{
+			"type" "franchise"
+			"name" "Hunt"
+		}
+	}
+	"primary_genre" "1"
+	"genres"
+	{
+		"0" "1"
+	}
+	"category"
+	{
+		"category_36" "1"
+		"category_38" "1"
+		"category_22" "1"
+		"category_29" "1"
+		"category_35" "1"
+		"category_25" "1"
+		"category_28" "1"
+		"category_1" "1"
+		"category_49" "1"
+		"category_9" "1"
+		"category_43" "1"
+		"category_42" "1"
+		"category_45" "1"
+		"category_46" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"french"
+		{
+			"supported" "true"
+		}
+		"italian"
+		{
+			"supported" "true"
+		}
+		"german"
+		{
+			"supported" "true"
+		}
+		"spanish"
+		{
+			"supported" "true"
+		}
+		"russian"
+		{
+			"supported" "true"
+		}
+		"schinese"
+		{
+			"supported" "true"
+		}
+		"polish"
+		{
+			"supported" "true"
+		}
+		"turkish"
+		{
+			"supported" "true"
+		}
+		"japanese"
+		{
+			"supported" "true"
+		}
+		"brazilian"
+		{
+			"supported" "true"
+		}
+	}
+	"steam_release_date" "1566909000"
+	"metacritic_score" "81"
+	"metacritic_fullurl" "https://www.metacritic.com/game/pc/hunt-showdown\?ftag=MCD-06-10aaa1f"
+	"community_visible_stats" "1"
+	"community_hub_visible" "1"
+	"gameid" "594650"
+	"content_descriptors_including_dlc"
+	{
+		"0" "2"
+		"1" "5"
+	}
+	"store_tags"
+	{
+		"0" "1695"
+		"1" "1199779"
+		"2" "3859"
+		"3" "4166"
+		"4" "1708"
+		"5" "1663"
+		"6" "1759"
+		"7" "1647"
+		"8" "1774"
+		"9" "1775"
+		"10" "1667"
+		"11" "3843"
+		"12" "3978"
+		"13" "1685"
+		"14" "4026"
+		"15" "176981"
+		"16" "5711"
+		"17" "19"
+		"18" "4345"
+		"19" "1659"
+	}
+	"review_score" "6"
+	"review_percentage" "72"
+}
+"extended"
+{
+	"additional_dependencies"
+	{
+		"0"
+		{
+			"src_os" "windows"
+			"dest_os" "linux"
+			"appid" "1826330"
+			"comment" "EAC runtime"
+		}
+	}
+	"anti_cheat_support_url" "https://www.easy.ac/r/steam/gamebans/\?steamAppId=594650"
+	"developer" "Crytek"
+	"publisher" "Crytek"
+	"homepage" "https://www.huntshowdown.com/"
+	"listofdlc" "1143840,1166470,1166471,1166472,1180490,1180491,1191490,1225140,1228530,1255000,1255001,1304600,1304601,1374340,1397380,1397381,1530430,1576410,1586080,1610550,1643020,1674570,1674580,1720670,1761570,1784870,1784880,1852470,1852480,1887100,1906330,1966460,2014790,2081520,2100450,2133640,2160020,2160330,2200640,2272500,2272530,2304380,2304500,2407940,2407941,2430650,2531020,2581740,2585200,2643040,2643050,2719560,2839560,3037030,3204800,3204810,3282880,3282900,3415590,3569970"
+	"dlcavailableonstore" "1"
+}
+"config"
+{
+	"installdir" "Hunt Showdown 1896"
+	"verifyupdates" "1"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings live +online_websvc_skip_tls_cert_validation 1"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+			}
+		}
+		"5"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings blue +online_websvc_skip_tls_cert_validation 1"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom latest qa_testroom2"
+			}
+			"description_loc"
+			{
+				"english" "MPQA 1"
+			}
+			"description" "MPQA 1"
+		}
+		"6"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings mpQA +online_websvc_skip_tls_cert_validation 1"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom latest qa_testroom2"
+			}
+			"description_loc"
+			{
+				"english" "MPQA 2"
+			}
+			"description" "MPQA 2"
+		}
+		"7"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings local +online_websvc_skip_tls_cert_validation 1"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom latest qa_testroom2"
+			}
+			"description_loc"
+			{
+				"english" "local workstation"
+			}
+			"description" "local workstation"
+		}
+		"8"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stage_external"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom latest qa_testroom2"
+			}
+			"description_loc"
+			{
+				"english" "PC Stage"
+			}
+			"description" "PC Stage"
+		}
+		"9"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings live +online_websvc_skip_tls_cert_validation 1 +lwp_authorizeToggling 1"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "lightweight"
+			}
+			"description_loc"
+			{
+				"english" "Lightweight Profiler"
+			}
+			"description" "Lightweight Profiler"
+		}
+		"10"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings bla -online_server cs1-lv-lw-eu.huntshowdown.com -online_server_port 11000"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom"
+			}
+			"description_loc"
+			{
+				"english" "pb_test"
+			}
+			"description" "pb_test"
+		}
+		"11"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stage_cloud"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "rolling_test"
+			}
+			"description_loc"
+			{
+				"english" "rolling_test"
+			}
+			"description" "rolling_test"
+		}
+		"12"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stageQA tlm_client_forward_enable 1"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom qa_testroom2"
+			}
+			"description_loc"
+			{
+				"english" "cnqa"
+			}
+			"description" "cnqa"
+		}
+		"13"
+		{
+			"executable" "hunt.exe"
+			"arguments" "+online_account_client_settings stage"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "qa_testroom2"
+			}
+			"description_loc"
+			{
+				"english" "STGDSN"
+			}
+			"description" "STGDSN"
+		}
+	}
+	"steamcontrollertouchtemplateindex" "1"
+	"steamcontrollertouchconfigdetails"
+	{
+		"2208296314"
+		{
+			"controller_type" "controller_mobile_touch"
+			"enabled_branches" "default"
+			"use_action_block" "false"
+		}
+	}
+}
+"depots"
+{
+	"228985"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228986"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228990"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"229004"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"594651"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "431257547850248730"
+				"size" "656252303"
+				"download" "244296080"
+			}
+		}
+	}
+	"594652"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8426888550032502117"
+				"size" "81789318411"
+				"download" "81347746848"
+			}
+		}
+	}
+	"594653"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "6958139291616374594"
+				"size" "399040012"
+				"download" "401880672"
+			}
+		}
+	}
+	"594654"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8435086870529823209"
+				"size" "0"
+				"download" "0"
+			}
+		}
+	}
+	"baselanguages" "english,german,french,italian,spanish,schinese,russian,japanese,polish,turkish,brazilian"
+	"hasdepotsindlc" "0"
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "18009150"
+			"timeupdated" "1744269007"
+		}
+	}
+	"privatebranches" "1"
+}
+"_missing_token" "False"
+"_change_number" "29552618"
+"_sha" "5d10c4db3ee8572f9d6d38754d88dff154c94607"
+"_size" "11996"
