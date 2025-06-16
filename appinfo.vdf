@@ -1,0 +1,53 @@
+"appid" "3519390"
+"common"
+{
+	"name" "Wreckfest 2 Dedicated Server"
+	"type" "Tool"
+	"parent" "1203190"
+	"icon" "eddb55342199b7e0d6139ed5e37d37db047b2b4f"
+	"clienticon" "baf599d8ba23ed9b2f3fa83728f4053a9960a9a2"
+	"clienttga" "7d5ef048e29f258d62118cf20a2e75dba0794042"
+	"releasestate" "released"
+	"freetodownload" "1"
+	"gameid" "3519390"
+}
+"config"
+{
+	"installdir" "Wreckfest 2 Dedicated Server"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "start_community_server.bat"
+			"type" "server"
+		}
+	}
+}
+"depots"
+{
+	"3519391"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "165068998243196038"
+				"size" "1167894464"
+				"download" "694111952"
+			}
+		}
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "18561284"
+			"timeupdated" "1747918870"
+		}
+	}
+	"privatebranches" "1"
+}
+"_missing_token" "False"
+"_change_number" "29126964"
+"_sha" "d725a83d451290ae6a0ce769ab7f3e2230cd98d9"
+"_size" "843"
