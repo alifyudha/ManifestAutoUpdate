@@ -199,7 +199,7 @@
 			}
 		}
 	}
-	"store_asset_mtime" "1746152436"
+	"store_asset_mtime" "1749837919"
 	"associations"
 	{
 		"0"
@@ -404,7 +404,7 @@
 			"subtitles" "true"
 		}
 	}
-	"steam_release_date" "1743699493"
+	"steam_release_date" "1743699480"
 	"community_visible_stats" "1"
 	"community_hub_visible" "1"
 	"gameid" "2531310"
@@ -422,8 +422,8 @@
 		"3" "4106"
 		"4" "44868"
 		"5" "1697"
-		"6" "19"
-		"7" "1667"
+		"6" "1667"
+		"7" "19"
 		"8" "1687"
 		"9" "4175"
 		"10" "5608"
@@ -700,6 +700,6 @@
 	}
 }
 "_missing_token" "False"
-"_change_number" "29294644"
-"_sha" "4cebb2df29bf052d9bac249fbfa0403b255676c3"
+"_change_number" "29570609"
+"_sha" "3b41da6caa77b9a2e2256f0e67a1511e937480cc"
 "_size" "12813"
