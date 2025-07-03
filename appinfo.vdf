@@ -1,0 +1,560 @@
+"appid" "1238880"
+"common"
+{
+	"name" "Battlefield™ Hardline"
+	"type" "Game"
+	"oslist" "windows"
+	"osarch" "64"
+	"osextended" ""
+	"eulas"
+	{
+		"0"
+		{
+			"id" "1238880_eula_0"
+			"name" "Battlefield Hardline EULA"
+			"url" "https://store.steampowered.com//eula/1238880_eula_0"
+			"version" "2"
+		}
+	}
+	"clienticon" "46d611cf1282fc04f3dd45f9164d46a579421e7f"
+	"clienttga" "781ce8b4f56e4e7453e3fe11acf47cb674abe493"
+	"icon" "ccf1167574120fcc2502f17c75677061c6f31ec1"
+	"logo" "00fbfb7cb722cbb7cad176c07bbbf2b856abcb8c"
+	"logo_small" "00fbfb7cb722cbb7cad176c07bbbf2b856abcb8c_thumb"
+	"name_localized"
+	{
+		"french" "Édition Ultimate de Battlefield™ Hardline"
+		"polish" "Battlefield™ Hardline – Edycja Ultimate"
+		"russian" "Максимальное издание Battlefield™ Hardline"
+		"turkish" "Battlefield™ Hardline Ultimate Sürüm"
+		"brazilian" "Edição Ultimate de Battlefield™ Hardline"
+		"tchinese" "《戰地風雲：Hardline》終極版"
+		"japanese" "バトルフィールド ハードライン Ultimateエディション"
+		"koreana" "Battlefield™ Hardline 얼티밋 에디션"
+		"schinese" "《Battlefield™ Hardline》终极版"
+		"latam" "Battlefield™ Hardline Edición Ultimate"
+	}
+	"releasestate" "released"
+	"exfgls" "1"
+	"languages"
+	{
+		"english" "1"
+		"german" "1"
+		"french" "1"
+		"italian" "1"
+		"koreana" "1"
+		"spanish" "1"
+		"tchinese" "1"
+		"russian" "1"
+		"japanese" "1"
+		"polish" "1"
+		"czech" "1"
+		"brazilian" "1"
+	}
+	"content_descriptors"
+	{
+		"0" "2"
+		"1" "5"
+	}
+	"steam_deck_compatibility"
+	{
+		"category" "1"
+		"steamos_compatibility" "1"
+		"test_timestamp" "1667606400"
+		"tested_build_id" "8952425"
+		"tests"
+		{
+			"0"
+			{
+				"display" "2"
+				"token" "#SteamDeckVerified_TestResult_SteamOSDoesNotSupport"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "2"
+				"token" "#SteamOS_TestResult_SteamOSDoesNotSupport"
+			}
+		}
+		"configuration"
+		{
+			"supported_input" "other"
+			"requires_manual_keyboard_invoke" "1"
+			"requires_non_controller_launcher_nav" "1"
+			"primary_player_is_controller_slot_0" "0"
+			"non_deck_display_glyphs" "0"
+			"small_text" "0"
+			"requires_internet_for_setup" "1"
+			"requires_internet_for_singleplayer" "0"
+			"recommended_runtime" "proton-experimental"
+			"requires_h264" "0"
+			"requires_voice_files" "0"
+			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "0"
+		}
+	}
+	"metacritic_name" "Battlefield Hardline"
+	"controller_support" "full"
+	"small_capsule"
+	{
+		"english" "capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_logo" "en"
+		"logo_position"
+		{
+			"pinned_position" "CenterCenter"
+			"width_pct" "50"
+			"height_pct" "50"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "library_hero.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_hero_2x.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "logo.png"
+			}
+			"logo_position"
+			{
+				"pinned_position" "CenterCenter"
+				"width_pct" "50"
+				"height_pct" "50"
+			}
+			"image2x"
+			{
+				"english" "logo_2x.png"
+			}
+		}
+	}
+	"store_asset_mtime" "1597704293"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "DICE"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "Electronic Arts"
+		}
+		"2"
+		{
+			"type" "franchise"
+			"name" "Battlefield"
+		}
+	}
+	"primary_genre" "1"
+	"genres"
+	{
+		"0" "1"
+	}
+	"category"
+	{
+		"category_28" "1"
+		"category_2" "1"
+		"category_1" "1"
+		"category_49" "1"
+		"category_36" "1"
+		"category_29" "1"
+		"category_22" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"french"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"italian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"german"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"spanish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"czech"
+		{
+			"supported" "true"
+		}
+		"japanese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"koreana"
+		{
+			"supported" "true"
+		}
+		"polish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"brazilian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"russian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+		}
+		"tchinese"
+		{
+			"supported" "true"
+		}
+	}
+	"original_release_date" "1426489200"
+	"steam_release_date" "1591887480"
+	"metacritic_score" "71"
+	"metacritic_fullurl" "https://www.metacritic.com/game/pc/battlefield-hardline\?ftag=MCD-06-10aaa1f"
+	"community_visible_stats" "1"
+	"community_hub_visible" "1"
+	"gameid" "1238880"
+	"content_descriptors_including_dlc"
+	{
+		"0" "2"
+		"1" "5"
+	}
+	"store_tags"
+	{
+		"0" "19"
+		"1" "3859"
+		"2" "1774"
+		"3" "4182"
+		"4" "1663"
+		"5" "3839"
+		"6" "1678"
+		"7" "4667"
+		"8" "1708"
+		"9" "1775"
+		"10" "4345"
+		"11" "4166"
+		"12" "6378"
+	}
+	"review_score" "5"
+	"review_percentage" "68"
+	"mastersubs_granting_app" "1289670"
+}
+"extended"
+{
+	"developer" "DICE"
+	"publisher" "Electronic Arts"
+	"homepage" "https://www.ea.com/games/battlefield/battlefield-hardline"
+	"listofdlc" "1238890,1238891,1279010,1279011,1279012,1279013,1279340,1279341,1279350,1279351,1279352,1279353,1279354,1279355,1279356,1279357"
+	"dlcavailableonstore" "1"
+}
+"config"
+{
+	"installdir" "BFH"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "link2ea://launchgame/1238880\?platform=steam&theme=bfh"
+			"type" "none"
+		}
+	}
+}
+"depots"
+{
+	"hasdepotsindlc" "1"
+	"baselanguages" "english,german,french,italian,koreana,spanish,tchinese,russian,japanese,polish,czech,brazilian"
+	"228984"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228990"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"1238881"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "6826322720323828727"
+				"size" "51747567379"
+				"download" "40469872656"
+			}
+		}
+	}
+	"1238882"
+	{
+		"config"
+		{
+			"language" "english"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "5814594304937679643"
+				"size" "1670464229"
+				"download" "1252573168"
+			}
+		}
+	}
+	"1238883"
+	{
+		"config"
+		{
+			"language" "czech"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "4310926822665069738"
+				"size" "2201534"
+				"download" "819760"
+			}
+		}
+	}
+	"1238884"
+	{
+		"config"
+		{
+			"language" "german"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "4534105736785367841"
+				"size" "1461253461"
+				"download" "1096436688"
+			}
+		}
+	}
+	"1238885"
+	{
+		"config"
+		{
+			"language" "spanish"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1245164389321818488"
+				"size" "1480193405"
+				"download" "1108651872"
+			}
+		}
+	}
+	"1238886"
+	{
+		"config"
+		{
+			"language" "french"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "2017350244556318474"
+				"size" "1423177351"
+				"download" "1066200288"
+			}
+		}
+	}
+	"1238887"
+	{
+		"config"
+		{
+			"language" "italian"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "403053245919075471"
+				"size" "1467738959"
+				"download" "1099657184"
+			}
+		}
+	}
+	"1238888"
+	{
+		"config"
+		{
+			"language" "japanese"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "5841245290236083918"
+				"size" "1455550166"
+				"download" "1073635312"
+			}
+		}
+	}
+	"1238889"
+	{
+		"config"
+		{
+			"language" "koreana"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "3822655056749081611"
+				"size" "2621230"
+				"download" "744544"
+			}
+		}
+	}
+	"1238892"
+	{
+		"config"
+		{
+			"language" "polish"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "6285831484115087703"
+				"size" "1448109268"
+				"download" "1088213472"
+			}
+		}
+	}
+	"1238893"
+	{
+		"config"
+		{
+			"language" "portuguese"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1268099092303341209"
+				"size" "1481943478"
+				"download" "1115696128"
+			}
+		}
+	}
+	"1238894"
+	{
+		"config"
+		{
+			"language" "russian"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "6956063495166561242"
+				"size" "1499616963"
+				"download" "1125794768"
+			}
+		}
+	}
+	"1238895"
+	{
+		"config"
+		{
+			"language" "tchinese"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "6789680548342885196"
+				"size" "2181607"
+				"download" "719232"
+			}
+		}
+	}
+	"3340991"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1318423300601359782"
+				"size" "235231375"
+				"download" "234719568"
+			}
+		}
+		"depotfromapp" "3340990"
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "10351826"
+			"timeupdated" "1674475379"
+		}
+	}
+	"privatebranches" "1"
+}
+"_missing_token" "False"
+"_change_number" "29849571"
+"_sha" "64752ce431be7279378b155ffb7eb823b7a507ad"
+"_size" "9365"
