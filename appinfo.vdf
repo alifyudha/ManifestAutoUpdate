@@ -1,0 +1,217 @@
+"appid" "3061250"
+"common"
+{
+	"name" "摸鱼大师"
+	"type" "Game"
+	"icon" "9cc8179a6ba7bf6425406c0ace6a9b6a13c36c2d"
+	"clienticon" "16f2aef88a453b9248a60a54d1299681639752eb"
+	"clienttga" "7ec1cecd56a22a26d6d08fc9bdb9c86095c8e4cd"
+	"name_localized"
+	{
+		"english" "Slack off master"
+		"schinese" "摸鱼大师"
+	}
+	"oslist" "windows"
+	"osarch" "64"
+	"osextended" ""
+	"releasestate" "released"
+	"controllertagwizard" "1"
+	"small_capsule"
+	{
+		"english" "capsule_231x87.jpg"
+		"schinese" "capsule_231x87_schinese.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+		"schinese" "header_schinese.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en,zh-cn"
+		"library_hero" "en,zh-cn"
+		"library_logo" "en,zh-cn"
+		"library_header" "en,zh-cn"
+		"logo_position"
+		{
+			"pinned_position" "BottomLeft"
+			"width_pct" "68.85673596989474"
+			"height_pct" "60.391110072342514"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+				"schinese" "library_600x900_schinese.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+				"schinese" "library_600x900_schinese_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "library_hero.jpg"
+				"schinese" "library_hero_schinese.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_hero_2x.jpg"
+				"schinese" "library_hero_schinese_2x.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "logo.png"
+				"schinese" "logo_schinese.png"
+			}
+			"image2x"
+			{
+				"english" "logo_2x.png"
+				"schinese" "logo_schinese_2x.png"
+			}
+			"logo_position"
+			{
+				"pinned_position" "BottomLeft"
+				"width_pct" "68.85673596989474"
+				"height_pct" "60.391110072342514"
+			}
+		}
+		"library_header"
+		{
+			"image"
+			{
+				"english" "library_header.jpg"
+				"schinese" "library_header_schinese.jpg"
+			}
+		}
+	}
+	"store_asset_mtime" "1725447097"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "zhangjianfeng"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "zhangjianfeng"
+		}
+	}
+	"primary_genre" "4"
+	"genres"
+	{
+		"0" "4"
+		"1" "23"
+	}
+	"category"
+	{
+		"category_2" "1"
+		"category_62" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"schinese"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1721436445"
+	"community_hub_visible" "1"
+	"gameid" "3061250"
+	"store_tags"
+	{
+		"0" "597"
+		"1" "9"
+		"2" "1774"
+		"3" "5379"
+		"4" "4637"
+		"5" "3814"
+		"6" "3871"
+		"7" "4791"
+		"8" "1719"
+		"9" "492"
+		"10" "4136"
+		"11" "6426"
+		"12" "4182"
+	}
+}
+"extended"
+{
+	"developer" "zhangjianfeng"
+	"publisher" "zhangjianfeng"
+}
+"config"
+{
+	"installdir" "摸鱼大师"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "Slack off master.exe"
+		}
+	}
+}
+"depots"
+{
+	"baselanguages" "english,schinese"
+	"228988"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"228990"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"3061251"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "1881497368621543590"
+				"size" "601082606"
+				"download" "45064736"
+			}
+		}
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "14807824"
+			"timeupdated" "1719114211"
+		}
+	}
+}
+"_missing_token" "False"
+"_change_number" "27924129"
+"_sha" "cf67999f27f915c28056614e31b69e1579d2ea66"
+"_size" "3550"
