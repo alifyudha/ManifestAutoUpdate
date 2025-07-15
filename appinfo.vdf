@@ -1,0 +1,179 @@
+"appid" "2697250"
+"common"
+{
+	"name" "Gran Carismo"
+	"type" "Game"
+	"oslist" "windows"
+	"osarch" ""
+	"osextended" ""
+	"icon" "e5ee060ecd84c354208685185c6ac1df3b187a60"
+	"clienttga" "fd3ed2a083363f44526d1bd10e3ffff38e267f7e"
+	"clienticon" "5ccebc3162d81521413e3c4bbc6a2f2b9b1a1047"
+	"releasestate" "released"
+	"controllertagwizard" "1"
+	"small_capsule"
+	{
+		"english" "capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_logo" "en"
+		"logo_position"
+		{
+			"pinned_position" "UpperCenter"
+			"width_pct" "89.58990586386568"
+			"height_pct" "126.55548324514555"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "library_hero.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "logo.png"
+			}
+			"image2x"
+			{
+				"english" "logo_2x.png"
+			}
+			"logo_position"
+			{
+				"pinned_position" "UpperCenter"
+				"width_pct" "89.58990586386568"
+				"height_pct" "126.55548324514555"
+			}
+		}
+	}
+	"store_asset_mtime" "1715045694"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "SP GAMES"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "SP GAMES"
+		}
+	}
+	"primary_genre" "9"
+	"genres"
+	{
+		"0" "9"
+		"1" "28"
+	}
+	"category"
+	{
+		"category_2" "1"
+		"category_62" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1708356125"
+	"community_hub_visible" "1"
+	"gameid" "2697250"
+	"store_tags"
+	{
+		"0" "699"
+		"1" "599"
+		"2" "1100687"
+		"3" "3798"
+		"4" "4191"
+		"5" "3839"
+		"6" "1697"
+		"7" "4175"
+		"8" "13190"
+		"9" "4166"
+		"10" "1644"
+		"11" "701"
+		"12" "10383"
+		"13" "6730"
+		"14" "7926"
+		"15" "7481"
+		"16" "3968"
+		"17" "4182"
+	}
+}
+"extended"
+{
+	"developer" "SP GAMES"
+	"publisher" "SP GAMES"
+	"homepage" "https://www.facebook.com/sp.games.steam"
+}
+"config"
+{
+	"installdir" "Gran Carismo"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "Gran Carismo.exe"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+			}
+		}
+	}
+}
+"depots"
+{
+	"2697251"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "469165266282551145"
+				"size" "3707038022"
+				"download" "870575744"
+			}
+		}
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "13592983"
+			"timeupdated" "1709155408"
+		}
+	}
+}
+"_missing_token" "False"
+"_change_number" "27924129"
+"_sha" "9a2d6dad47ea4ccbd4cf103c5f4ae77c2444b13c"
+"_size" "2730"
