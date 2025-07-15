@@ -41,14 +41,23 @@
 	"steam_deck_compatibility"
 	{
 		"category" "1"
-		"test_timestamp" "1690934400"
-		"tested_build_id" "11314093"
+		"steamos_compatibility" "1"
+		"test_timestamp" "1743120000"
+		"tested_build_id" "15529132"
 		"tests"
 		{
 			"0"
 			{
 				"display" "2"
 				"token" "#SteamDeckVerified_TestResult_UnsupportedAntiCheatConfiguration"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "2"
+				"token" "#SteamOS_TestResult_UnsupportedAntiCheatConfiguration"
 			}
 		}
 		"configuration"
@@ -61,9 +70,11 @@
 			"small_text" "0"
 			"requires_internet_for_setup" "1"
 			"requires_internet_for_singleplayer" "0"
-			"recommended_runtime" "proton-experimental"
+			"recommended_runtime" "proton-9.0-3RC"
 			"requires_h264" "0"
+			"requires_voice_files" "0"
 			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "0"
 		}
 	}
 	"metacritic_name" "The Crew™ 2"
@@ -280,8 +291,8 @@
 		"15" "13190"
 		"16" "701"
 		"17" "4166"
-		"18" "3810"
-		"19" "21"
+		"18" "21"
+		"19" "3810"
 	}
 	"review_score" "6"
 	"review_percentage" "77"
@@ -397,9 +408,9 @@
 		{
 			"public"
 			{
-				"gid" "3341282173115166582"
-				"size" "239900768"
-				"download" "241746080"
+				"gid" "818295193716041715"
+				"size" "632424"
+				"download" "551504"
 			}
 		}
 		"depotfromapp" "1716750"
@@ -422,6 +433,6 @@
 	"privatebranches" "1"
 }
 "_missing_token" "False"
-"_change_number" "27924129"
-"_sha" "0c9f6d433360ff81b6dd1b62c500d33fbef2ea06"
-"_size" "7993"
+"_change_number" "30063639"
+"_sha" "cc7648d7b848b98f7e41e7dddc57cfa34a157e6d"
+"_size" "8207"
