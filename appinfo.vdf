@@ -259,8 +259,8 @@
 	"gameid" "221040"
 	"store_tags"
 	{
-		"0" "19"
-		"1" "1659"
+		"0" "1659"
+		"1" "19"
 		"2" "1685"
 		"3" "3814"
 		"4" "1667"
@@ -535,6 +535,6 @@
 	"maxnumfiles" "2"
 }
 "_missing_token" "False"
-"_change_number" "29478944"
-"_sha" "803a6b12b63e19c0b79a7a9a085711375d1ba63b"
+"_change_number" "29873554"
+"_sha" "5f80e8aade94772a1b854a7514cf7e205f44dd56"
 "_size" "9809"
