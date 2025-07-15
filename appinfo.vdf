@@ -1,7 +1,7 @@
 "appid" "359550"
 "common"
 {
-	"name" "Tom Clancy\'s Rainbow Six Siege"
+	"name" "Tom Clancy\'s Rainbow Six® Siege X"
 	"type" "Game"
 	"releasestate" "released"
 	"icon" "624745d333ac54aedb1ee911013e2edb7722550e"
@@ -21,6 +21,17 @@
 		}
 	}
 	"exfgls" "1"
+	"name_localized"
+	{
+		"japanese" "レインボーシックス シージ エックス "
+		"koreana" "톰 클랜시의 레인보우식스 시즈 X"
+		"schinese" "《彩虹六号：围攻X》"
+		"tchinese" "《虹彩六號：圍攻行動 X》"
+	}
+	"content_descriptors"
+	{
+		"0" "5"
+	}
 	"steam_deck_compatibility"
 	{
 		"category" "1"
@@ -65,18 +76,25 @@
 	"controller_support" "full"
 	"small_capsule"
 	{
-		"english" "capsule_231x87.jpg"
+		"english" "429275e1f06a9697892acdc57ae0a9d06bafe9f1/capsule_231x87.jpg"
+		"schinese" "ea8273d8a3713301d9061a95652e4e24efe8921f/capsule_231x87_schinese.jpg"
+		"tchinese" "1280e787e6893cf62a9ffd2612f26019369f2ebc/capsule_231x87_tchinese.jpg"
+		"japanese" "2f9c2f3dc133907d2d59d1fa75187091c902ae63/capsule_231x87_japanese.jpg"
 	}
 	"header_image"
 	{
-		"english" "header.jpg"
+		"english" "dc3570350a99ecc4dd77f83fad47787f7eca89f7/header.jpg"
+		"schinese" "e52fa60ef3eb9521d8213fa30ff9965547e268c8/header_schinese.jpg"
+		"tchinese" "bba1c708a85cb83d36d81f00fa07117f860575b5/header_tchinese.jpg"
+		"japanese" "6b069d03e814bdeb05aa3fe61266b0d433e16d96/header_japanese.jpg"
 	}
 	"library_assets"
 	{
-		"library_capsule" "en"
+		"library_capsule" "en,zh-cn,zh-tw,ja"
 		"library_hero" "en"
 		"library_hero_blur" "en"
-		"library_logo" "en"
+		"library_logo" "en,zh-cn,zh-tw,ja"
+		"library_header" "en,zh-cn,zh-tw,ja"
 		"logo_position"
 		{
 			"pinned_position" "BottomLeft"
@@ -90,29 +108,35 @@
 		{
 			"image"
 			{
-				"english" "6bbc938cb706414379556fc521e3381abfe8c6b4/library_600x900.jpg"
+				"english" "7d8f25258df36a3f04ba062b890bf109aab1ed2e/library_600x900.jpg"
+				"schinese" "21537edba7bf4f7f83f6be738228aabc6d0f3a54/library_600x900_schinese.jpg"
+				"tchinese" "b976b1eac55a40eee9b8d91477af38e7380bb3e9/library_600x900_tchinese.jpg"
+				"japanese" "46037680d9c71d5576004003206de01e1df07daa/library_600x900_japanese.jpg"
 			}
 			"image2x"
 			{
-				"english" "6bbc938cb706414379556fc521e3381abfe8c6b4/library_600x900_2x.jpg"
+				"english" "7d8f25258df36a3f04ba062b890bf109aab1ed2e/library_600x900_2x.jpg"
+				"schinese" "21537edba7bf4f7f83f6be738228aabc6d0f3a54/library_600x900_schinese_2x.jpg"
+				"tchinese" "b976b1eac55a40eee9b8d91477af38e7380bb3e9/library_600x900_tchinese_2x.jpg"
+				"japanese" "46037680d9c71d5576004003206de01e1df07daa/library_600x900_japanese_2x.jpg"
 			}
 		}
 		"library_hero"
 		{
 			"image"
 			{
-				"english" "259e198a874cdfad24bd00947ad99f8a86cadfcf/library_hero.jpg"
+				"english" "6a17af1cb99e9822a54b6b80f8186ac932b88d3d/library_hero.jpg"
 			}
 			"image2x"
 			{
-				"english" "259e198a874cdfad24bd00947ad99f8a86cadfcf/library_hero_2x.jpg"
+				"english" "6a17af1cb99e9822a54b6b80f8186ac932b88d3d/library_hero_2x.jpg"
 			}
 		}
 		"library_hero_blur"
 		{
 			"image"
 			{
-				"english" "259e198a874cdfad24bd00947ad99f8a86cadfcf/library_hero_blur.jpg"
+				"english" "6a17af1cb99e9822a54b6b80f8186ac932b88d3d/library_hero_blur.jpg"
 			}
 		}
 		"library_logo"
@@ -125,15 +149,38 @@
 			}
 			"image"
 			{
-				"english" "69e8eef7b0e2ec49c2ff1b0cdf837037c02f4a02/logo.png"
+				"english" "d269e384c6b3fc04dea75db2c169b4f923de3cf1/logo.png"
+				"schinese" "7c4b9a067ad9c676b392fb05ee96eb58ce2cacb5/logo_schinese.png"
+				"tchinese" "1251050c2a8d120e9593136e1a8800decfa3fef0/logo_tchinese.png"
+				"japanese" "16bbeda7faf989bb4a84f4825dc5b350bb439aef/logo_japanese.png"
 			}
 			"image2x"
 			{
-				"english" "69e8eef7b0e2ec49c2ff1b0cdf837037c02f4a02/logo_2x.png"
+				"english" "d269e384c6b3fc04dea75db2c169b4f923de3cf1/logo_2x.png"
+				"schinese" "7c4b9a067ad9c676b392fb05ee96eb58ce2cacb5/logo_schinese_2x.png"
+				"tchinese" "1251050c2a8d120e9593136e1a8800decfa3fef0/logo_tchinese_2x.png"
+				"japanese" "16bbeda7faf989bb4a84f4825dc5b350bb439aef/logo_japanese_2x.png"
+			}
+		}
+		"library_header"
+		{
+			"image"
+			{
+				"english" "dc3570350a99ecc4dd77f83fad47787f7eca89f7/library_header.jpg"
+				"schinese" "e52fa60ef3eb9521d8213fa30ff9965547e268c8/library_header_schinese.jpg"
+				"tchinese" "bba1c708a85cb83d36d81f00fa07117f860575b5/library_header_tchinese.jpg"
+				"japanese" "6b069d03e814bdeb05aa3fe61266b0d433e16d96/library_header_japanese.jpg"
+			}
+			"image2x"
+			{
+				"english" "dc3570350a99ecc4dd77f83fad47787f7eca89f7/library_header_2x.jpg"
+				"schinese" "e52fa60ef3eb9521d8213fa30ff9965547e268c8/library_header_schinese_2x.jpg"
+				"tchinese" "bba1c708a85cb83d36d81f00fa07117f860575b5/library_header_tchinese_2x.jpg"
+				"japanese" "6b069d03e814bdeb05aa3fe61266b0d433e16d96/library_header_japanese_2x.jpg"
 			}
 		}
 	}
-	"store_asset_mtime" "1742315828"
+	"store_asset_mtime" "1752169780"
 	"associations"
 	{
 		"0"
@@ -152,10 +199,11 @@
 			"name" "Rainbow 6 Franchise"
 		}
 	}
-	"primary_genre" "1"
+	"primary_genre" "37"
 	"genres"
 	{
 		"0" "1"
+		"1" "37"
 	}
 	"category"
 	{
@@ -282,8 +330,8 @@
 		"1" "1775"
 		"2" "3859"
 		"3" "1708"
-		"4" "5055"
-		"5" "1774"
+		"4" "1774"
+		"5" "5055"
 		"6" "3878"
 		"7" "3843"
 		"8" "19"
@@ -311,6 +359,7 @@
 	"developer" "Ubisoft Montreal"
 	"publisher" "Ubisoft"
 	"homepage" "http://rainbow6.ubi.com/"
+	"isfreeapp" "1"
 	"listofdlc" "377560,417460,417461,417462,417463,417464,417465,420750,420751,420752,420753,420754,420755,420756,420757,420758,427601,427602,427603,427604,427605,450790,455010,455570,455571,455572,455573,455574,455575,455576,455577,455578,455579,455580,455581,455810,461960,461961,462300,468390,485320,485321,488810,488811,488812,488820,488821,488822,488823,488824,488830,488831,500390,500391,500392,512340,521160,524040,524041,524042,524043,535820,538910,541400"
 	"dlcavailableonstore" "1"
 }
@@ -453,10 +502,6 @@
 }
 "depots"
 {
-	"depotdeltapatches" "1"
-	"baselanguages" ""
-	"workshopdepot" "359550"
-	"hasdepotsindlc" "0"
 	"228983"
 	{
 		"config"
@@ -493,6 +538,15 @@
 		"depotfromapp" "228980"
 		"sharedinstall" "1"
 	}
+	"228988"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
 	"228990"
 	{
 		"config"
@@ -502,6 +556,10 @@
 		"depotfromapp" "228980"
 		"sharedinstall" "1"
 	}
+	"depotdeltapatches" "1"
+	"baselanguages" ""
+	"workshopdepot" "359550"
+	"hasdepotsindlc" "0"
 	"359551"
 	{
 		"config"
@@ -513,9 +571,9 @@
 		{
 			"public"
 			{
-				"gid" "4662921505265408209"
-				"size" "55023056291"
-				"download" "52974798992"
+				"gid" "2653837703293034776"
+				"size" "60392158645"
+				"download" "58301015312"
 			}
 			"local"
 			{
@@ -557,9 +615,9 @@
 		{
 			"public"
 			{
-				"gid" "6027126175183776647"
-				"size" "624244219"
-				"download" "511586144"
+				"gid" "3266438072542651841"
+				"size" "630896123"
+				"download" "517625088"
 			}
 			"local"
 			{
@@ -579,9 +637,9 @@
 		{
 			"public"
 			{
-				"gid" "3933885544310630089"
-				"size" "689908544"
-				"download" "579207344"
+				"gid" "203862235404199386"
+				"size" "705506112"
+				"download" "592759312"
 			}
 			"local"
 			{
@@ -601,9 +659,9 @@
 		{
 			"public"
 			{
-				"gid" "8732807291142399667"
-				"size" "684111668"
-				"download" "572075600"
+				"gid" "5928243499191143179"
+				"size" "694859572"
+				"download" "581738224"
 			}
 			"local"
 			{
@@ -623,9 +681,9 @@
 		{
 			"public"
 			{
-				"gid" "3338476485119604481"
-				"size" "1373252822"
-				"download" "1148942000"
+				"gid" "8251723541043173176"
+				"size" "1418833110"
+				"download" "1187774080"
 			}
 			"local"
 			{
@@ -645,9 +703,9 @@
 		{
 			"public"
 			{
-				"gid" "4834319180227958769"
-				"size" "686470735"
-				"download" "574662096"
+				"gid" "7547379365120972916"
+				"size" "702527055"
+				"download" "588412560"
 			}
 			"local"
 			{
@@ -799,9 +857,9 @@
 		{
 			"public"
 			{
-				"gid" "7771015212642095191"
-				"size" "638431708"
-				"download" "525256640"
+				"gid" "3987172507304672674"
+				"size" "643084764"
+				"download" "529741696"
 			}
 			"local"
 			{
@@ -821,9 +879,9 @@
 		{
 			"public"
 			{
-				"gid" "2512848473506198550"
-				"size" "641191726"
-				"download" "529220656"
+				"gid" "3407221126317639259"
+				"size" "648662830"
+				"download" "535478816"
 			}
 			"local"
 			{
@@ -839,8 +897,8 @@
 		{
 			"public"
 			{
-				"gid" "1449926766570790382"
-				"size" "5689647"
+				"gid" "6717525579668677969"
+				"size" "5688133"
 				"download" "5120336"
 			}
 			"local"
@@ -857,9 +915,9 @@
 		{
 			"public"
 			{
-				"gid" "5528515263360250871"
-				"size" "5512484"
-				"download" "5060320"
+				"gid" "2089846849983285304"
+				"size" "5511044"
+				"download" "5060336"
 			}
 			"local"
 			{
@@ -876,9 +934,9 @@
 		{
 			"public"
 			{
-				"gid" "2949924448248370619"
-				"size" "33495777280"
-				"download" "33640607360"
+				"gid" "3507602244568617339"
+				"size" "38337806336"
+				"download" "38534914816"
 			}
 			"local"
 			{
@@ -942,9 +1000,9 @@
 		{
 			"public"
 			{
-				"gid" "5518474870546047872"
-				"size" "686012069"
-				"download" "574066288"
+				"gid" "6568460805520537035"
+				"size" "720778917"
+				"download" "603250224"
 			}
 		}
 	}
@@ -970,9 +1028,9 @@
 		{
 			"public"
 			{
-				"gid" "3341282173115166582"
-				"size" "239900768"
-				"download" "241746080"
+				"gid" "818295193716041715"
+				"size" "632424"
+				"download" "551504"
 			}
 		}
 		"depotfromapp" "1716750"
@@ -981,8 +1039,8 @@
 	{
 		"public"
 		{
-			"buildid" "18660020"
-			"timeupdated" "1748529827"
+			"buildid" "19230218"
+			"timeupdated" "1752584670"
 		}
 		"local"
 		{
@@ -1002,6 +1060,6 @@
 	"ignoreexternalfiles" "1"
 }
 "_missing_token" "False"
-"_change_number" "29313890"
-"_sha" "7498b09717bafa7441753ec1f0e030006e53d53a"
-"_size" "16973"
+"_change_number" "30070926"
+"_sha" "6e25d96ad6261fbbe3418a33a11605c1045cf2d9"
+"_size" "19860"
