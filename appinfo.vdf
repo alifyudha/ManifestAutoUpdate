@@ -1,0 +1,207 @@
+"appid" "3614630"
+"common"
+{
+	"name" "Santa\'s Last Stand"
+	"type" "Game"
+	"icon" "3890c5f242fab7c3863fcea7de43086233be5584"
+	"clienttga" "7521447cab3de3476e265c1e6f9a5bca93866c69"
+	"clienticon" "58d27834cd2cf6c1ad8d1fd2347e62e36cdc1ac9"
+	"releasestate" "released"
+	"oslist" "windows"
+	"osarch" ""
+	"osextended" ""
+	"aicontenttype" "1"
+	"controllertagwizard" "1"
+	"small_capsule"
+	{
+		"english" "1a724a3384dc561fa7bcf61a55a6125ded09ed9d/capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "2d0e7931644831b709090b549081097552b177d2/header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_hero_blur" "en"
+		"library_logo" "en"
+		"library_header" "en"
+		"logo_position"
+		{
+			"pinned_position" "UpperCenter"
+			"width_pct" "65.57748125253846"
+			"height_pct" "100"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "e732b5e7674ece5451e8af2bcfc8b3f13c1b7d6b/library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "e732b5e7674ece5451e8af2bcfc8b3f13c1b7d6b/library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image2x"
+			{
+				"english" "91e728b9f777ccad78976241c5dfae239ec7d46f/library_hero_2x.jpg"
+			}
+			"image"
+			{
+				"english" "91e728b9f777ccad78976241c5dfae239ec7d46f/library_hero.jpg"
+			}
+		}
+		"library_hero_blur"
+		{
+			"image"
+			{
+				"english" "91e728b9f777ccad78976241c5dfae239ec7d46f/library_hero_blur.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "a3fefd1824947e98516bd5689ee843927d42e4ac/logo.png"
+			}
+			"image2x"
+			{
+				"english" "a3fefd1824947e98516bd5689ee843927d42e4ac/logo_2x.png"
+			}
+			"logo_position"
+			{
+				"pinned_position" "UpperCenter"
+				"width_pct" "65.57748125253846"
+				"height_pct" "100"
+			}
+		}
+		"library_header"
+		{
+			"image"
+			{
+				"english" "2d0e7931644831b709090b549081097552b177d2/library_header.jpg"
+			}
+			"image2x"
+			{
+				"english" "2d0e7931644831b709090b549081097552b177d2/library_header_2x.jpg"
+			}
+		}
+	}
+	"store_asset_mtime" "1744077294"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "DeathWishGames"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "DeathWishGames"
+		}
+	}
+	"primary_genre" "1"
+	"genres"
+	{
+		"0" "1"
+		"1" "23"
+		"2" "2"
+		"3" "70"
+	}
+	"category"
+	{
+		"category_2" "1"
+		"category_62" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1744106247"
+	"community_hub_visible" "1"
+	"gameid" "3614630"
+	"store_tags"
+	{
+		"0" "42804"
+		"1" "9"
+		"2" "4255"
+		"3" "3959"
+		"4" "1716"
+		"5" "3871"
+		"6" "4791"
+		"7" "5923"
+		"8" "4136"
+		"9" "19"
+		"10" "6426"
+		"11" "32322"
+		"12" "3964"
+		"13" "4018"
+		"14" "1662"
+		"15" "4004"
+		"16" "3993"
+		"17" "4182"
+		"18" "5228"
+		"19" "493"
+	}
+}
+"extended"
+{
+	"developer" "DeathWishGames"
+	"publisher" "DeathWishGames"
+}
+"config"
+{
+	"installdir" "Santa\'s Last Stand"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "SantasLastStand1.1.exe"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+			}
+		}
+	}
+}
+"depots"
+{
+	"3614631"
+	{
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8585363256463014974"
+				"size" "102112701"
+				"download" "78432432"
+			}
+		}
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "18008215"
+			"timeupdated" "1744012494"
+		}
+	}
+}
+"_missing_token" "False"
+"_change_number" "28367139"
+"_sha" "729e708ead0c03bf9a0eb031b4b67447bcef91c7"
+"_size" "3583"
