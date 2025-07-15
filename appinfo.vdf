@@ -1,0 +1,387 @@
+"appid" "1831400"
+"common"
+{
+	"name" "CBS: Desolation"
+	"type" "Game"
+	"oslist" "windows"
+	"osarch" ""
+	"osextended" ""
+	"clienttga" "f1140847f25eb36f8f441745df1e99c0b1d10b39"
+	"clienticon" "53d1e5b3ec17ccbeee75b382394edd9aefdd4577"
+	"icon" "e1cb01eab1e0123dceb27f0943ea6190fb82ee9c"
+	"logo" "4047ac895a823564232bc17ed1de70042b4360a5"
+	"logo_small" "4047ac895a823564232bc17ed1de70042b4360a5_thumb"
+	"releasestate" "released"
+	"languages"
+	{
+		"english" "1"
+		"turkish" "1"
+	}
+	"controllertagwizard" "1"
+	"controller_support" "full"
+	"small_capsule"
+	{
+		"english" "49c693038dd6f79d14aa5941857220198401b38b/capsule_231x87.jpg"
+		"turkish" "2f98527fdd7ab589fbd202d736d691afde1f640e/capsule_231x87_turkish.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+		"turkish" "header_turkish.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en,tr"
+		"library_hero" "en"
+		"library_logo" "en,tr"
+		"library_header" "en,tr"
+		"logo_position"
+		{
+			"pinned_position" "BottomLeft"
+			"width_pct" "79.73437965629044"
+			"height_pct" "113.45109140811235"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "91531d1ead4779179f9a9561e4ef1d547dff6d89/library_600x900.jpg"
+				"turkish" "ed0a3a529e8b615194273db28690d33df359e5c5/library_600x900_turkish.jpg"
+			}
+			"image2x"
+			{
+				"turkish" "ed0a3a529e8b615194273db28690d33df359e5c5/library_600x900_turkish_2x.jpg"
+				"english" "91531d1ead4779179f9a9561e4ef1d547dff6d89/library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image"
+			{
+				"english" "library_hero.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_hero_2x.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"image"
+			{
+				"english" "f6da2478ef70bc9edf12b2bc5415308aa02694b9/logo.png"
+				"turkish" "ec90da886dd346b6a96ddb49b46a456c787c9d02/logo_turkish.png"
+			}
+			"image2x"
+			{
+				"english" "f6da2478ef70bc9edf12b2bc5415308aa02694b9/logo_2x.png"
+				"turkish" "ec90da886dd346b6a96ddb49b46a456c787c9d02/logo_turkish_2x.png"
+			}
+			"logo_position"
+			{
+				"pinned_position" "BottomLeft"
+				"width_pct" "79.73437965629044"
+				"height_pct" "113.45109140811235"
+			}
+		}
+		"library_header"
+		{
+			"image"
+			{
+				"english" "bdbe1f23e25cb5010c8b08e3b82c27e6124b7d0d/library_header.jpg"
+				"turkish" "4b0c2b5a131cb8d2663b78b3869014fd5743784a/library_header_turkish.jpg"
+			}
+			"image2x"
+			{
+				"english" "bdbe1f23e25cb5010c8b08e3b82c27e6124b7d0d/library_header_2x.jpg"
+				"turkish" "4b0c2b5a131cb8d2663b78b3869014fd5743784a/library_header_turkish_2x.jpg"
+			}
+		}
+	}
+	"store_asset_mtime" "1749811079"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "Sim-plistic Studio"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "Sim-plistic Studio"
+		}
+		"2"
+		{
+			"type" "franchise"
+			"name" "Casual Babysitters"
+		}
+	}
+	"primary_genre" "2"
+	"genres"
+	{
+		"0" "25"
+		"1" "4"
+		"2" "3"
+		"3" "28"
+		"4" "2"
+	}
+	"category"
+	{
+		"category_2" "1"
+		"category_23" "1"
+		"category_22" "1"
+		"category_28" "1"
+		"category_15" "1"
+		"category_68" "1"
+		"category_74" "1"
+		"category_78" "1"
+		"category_79" "1"
+		"category_62" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+		"turkish"
+		{
+			"supported" "true"
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1645258007"
+	"community_visible_stats" "1"
+	"community_hub_visible" "1"
+	"gameid" "1831400"
+	"content_descriptors_including_dlc"
+	{
+		"0" "5"
+	}
+	"store_tags"
+	{
+		"0" "597"
+		"1" "599"
+		"2" "7332"
+		"3" "5030"
+		"4" "3834"
+		"5" "4604"
+		"6" "1751"
+		"7" "4252"
+		"8" "5125"
+		"9" "21"
+		"10" "1084988"
+		"11" "3942"
+		"12" "255534"
+		"13" "4182"
+		"14" "122"
+		"15" "9"
+		"16" "5094"
+		"17" "4094"
+		"18" "4064"
+		"19" "1684"
+	}
+}
+"extended"
+{
+	"developer" "Sim-plistic Studio"
+	"publisher" "Sim-plistic Studio"
+	"gamemanualurl" "https://store.steampowered.com/manual/1831400/"
+	"listofdlc" "2538310,2892140,2892150,3035700"
+	"dlcavailableonstore" "1"
+}
+"config"
+{
+	"installdir" "CBS_Desolation"
+	"steamcontrollertemplateindex" "13"
+	"steamcontrollertouchtemplateindex" "8"
+	"launch"
+	{
+		"0"
+		{
+			"executable" "CBS_Desolation.exe"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "32"
+				"betakey" "public32"
+			}
+			"description_loc"
+			{
+				"english" "32 bit"
+			}
+			"description" "32 bit"
+		}
+		"2"
+		{
+			"executable" "CBS_Desolation.exe"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+			}
+			"description_loc"
+			{
+				"english" "Custom live"
+			}
+			"description" "Custom live"
+		}
+		"3"
+		{
+			"executable" "CBS_Desolation.exe"
+			"type" "default"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "public64"
+			}
+			"description_loc"
+			{
+				"english" "64 bit only"
+			}
+			"description" "64 bit only"
+		}
+	}
+	"steamdecktouchscreen" "1"
+	"steamconfigurator3rdpartynative" "6"
+	"steaminputmanifestpath" "controller_config/game_actions_1831400.vdf"
+}
+"depots"
+{
+	"baselanguages" "english,turkish"
+	"hasdepotsindlc" "1"
+	"228990"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"depotfromapp" "228980"
+		"sharedinstall" "1"
+	}
+	"1831405"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "4293663067105684642"
+				"size" "2236753533"
+				"download" "390885616"
+			}
+			"previous"
+			{
+				"gid" "5062686592824056019"
+				"size" "492375652"
+				"download" "324440736"
+			}
+			"public32"
+			{
+				"gid" "4293663067105684642"
+				"size" "2236753533"
+				"download" "390885616"
+			}
+			"public64"
+			{
+				"gid" "2519181894289089518"
+				"size" "552153289"
+				"download" "374251680"
+			}
+		}
+	}
+	"1831406"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8648424022597995309"
+				"size" "2495771177"
+				"download" "598150448"
+			}
+			"previous"
+			{
+				"gid" "2300238086828513701"
+				"size" "2500616649"
+				"download" "605485920"
+			}
+			"public32"
+			{
+				"gid" "8648424022597995309"
+				"size" "2495771177"
+				"download" "598150448"
+			}
+			"public64"
+			{
+				"gid" "1625384800126857857"
+				"size" "2249196413"
+				"download" "394576352"
+			}
+		}
+	}
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "19195875"
+			"timeupdated" "1752327466"
+		}
+		"previous"
+		{
+			"buildid" "18956014"
+			"description" "Load the build prior to latest"
+			"timeupdated" "1750602811"
+		}
+		"public32"
+		{
+			"buildid" "19195875"
+			"description" "32bit build public branch"
+			"timeupdated" "1752264233"
+		}
+		"public64"
+		{
+			"buildid" "19195877"
+			"description" "64bit build public branch"
+			"timeupdated" "1752264243"
+		}
+	}
+}
+"ufs"
+{
+	"quota" "15000000"
+	"maxnumfiles" "200"
+	"sync_while_suspended" "1"
+	"savefiles"
+	{
+		"2"
+		{
+			"root" "WinAppDataLocalLow"
+			"path" "/Sim-plisticStudio/CBS_Desolation/CBSDesolation_GameData/CustomSaves/"
+			"pattern" "*"
+			"platforms"
+			{
+				"1" "Windows"
+			}
+		}
+	}
+}
+"_missing_token" "False"
+"_change_number" "30027514"
+"_sha" "56f4bcae61732b72d1909a57fe6e175d8fd8e7b0"
+"_size" "7395"
