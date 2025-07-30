@@ -1,0 +1,746 @@
+"appid" "1295660"
+"common"
+{
+	"name" "Sid Meier\'s Civilization VII"
+	"type" "Game"
+	"releasestate" "released"
+	"oslist" "windows,macos,linux"
+	"osarch" "64"
+	"osextended" "macosapplesilicon,macosnotarized"
+	"icon" "23a2f48017d676c267ed51de4ca48ec97abf7de2"
+	"clienttga" "afd29cb29d021ee279ec2fb3e9da00f3c9c5d948"
+	"clienticon" "caf850b14064a89962c6309f7685264cfc721c9e"
+	"name_localized"
+	{
+		"german" "Sid Meier\'s Civilization VII"
+		"french" "Sid Meier\'s Civilization VII"
+		"italian" "Sid Meier’s Civilization VII"
+		"koreana" "시드 마이어의 문명 VII"
+		"spanish" "Sid Meier\'s Civilization VII"
+		"schinese" "席德·梅尔的文明VII"
+		"tchinese" "席德·梅爾的文明帝國VII"
+		"russian" "Sid Meier\'s Civilization VII"
+		"japanese" "シドマイヤーズ シヴィライゼーション VII"
+		"portuguese" "Sid Meier\'s Civilization VII"
+		"polish" "Sid Meier\'s Civilization VII"
+		"danish" "Sid Meier’s Civilization VII"
+		"dutch" "Sid Meier\'s Civilization VII"
+		"finnish" "Sid Meier\'s Civilization VII"
+		"norwegian" "Sid Meier’s Civilization VII"
+		"swedish" "Sid Meier\'s Civilization VII"
+		"czech" "Sid Meier’s Civilization VII"
+		"turkish" "Sid Meier’s Civilization VII"
+		"brazilian" "Sid Meier\'s Civilization VII"
+		"ukrainian" "Sid Meier\'s Civilization VII"
+		"latam" "Sid Meier\'s Civilization VII"
+		"english" "Sid Meier\'s Civilization VII"
+	}
+	"eulas"
+	{
+		"0"
+		{
+			"id" "1295660_eula_0"
+			"name" "Sid Meier\'s Civilization VII EULA"
+			"url" "https://store.steampowered.com//eula/1295660_eula_0"
+			"version" "2"
+		}
+	}
+	"linuxclienticon" "a9a5d36bdd0c8b777d435f68479e57c22c9683da"
+	"clienticns" "c3299270dd906da9e221c5cd3348696b3902eabb"
+	"languages"
+	{
+		"english" "1"
+		"german" "1"
+		"french" "1"
+		"italian" "1"
+		"koreana" "1"
+		"spanish" "1"
+		"schinese" "1"
+		"tchinese" "1"
+		"russian" "1"
+		"japanese" "1"
+		"polish" "1"
+		"brazilian" "1"
+	}
+	"steam_deck_compatibility"
+	{
+		"category" "3"
+		"steamos_compatibility" "2"
+		"test_timestamp" "1736208000"
+		"tested_build_id" "16809786"
+		"tests"
+		{
+			"0"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_DefaultControllerConfigFullyFunctional"
+			}
+			"1"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_ControllerGlyphsMatchDeckDevice"
+			}
+			"2"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_InterfaceTextIsLegible"
+			}
+			"3"
+			{
+				"display" "4"
+				"token" "#SteamDeckVerified_TestResult_DefaultConfigurationIsPerformant"
+			}
+		}
+		"steamos_tests"
+		{
+			"0"
+			{
+				"display" "3"
+				"token" "#SteamOS_TestResult_GameStartupFunctional"
+			}
+		}
+		"configuration"
+		{
+			"supported_input" "gamepad"
+			"requires_manual_keyboard_invoke" "0"
+			"requires_non_controller_launcher_nav" "0"
+			"primary_player_is_controller_slot_0" "0"
+			"non_deck_display_glyphs" "0"
+			"small_text" "0"
+			"requires_internet_for_setup" "0"
+			"requires_internet_for_singleplayer" "0"
+			"recommended_runtime" "native"
+			"requires_h264" "0"
+			"requires_voice_files" "0"
+			"gamescope_frame_limiter_not_supported" "0"
+			"hdr_support" "2"
+		}
+	}
+	"metacritic_name" "Sid Meier\'s Civilization VII"
+	"controllertagwizard" "1"
+	"controller_support" "full"
+	"small_capsule"
+	{
+		"english" "56f256d5776521616d8842cd435f97b22de655cd/capsule_231x87.jpg"
+	}
+	"header_image"
+	{
+		"english" "header.jpg"
+	}
+	"library_assets"
+	{
+		"library_capsule" "en"
+		"library_hero" "en"
+		"library_hero_blur" "en"
+		"library_logo" "en"
+		"library_header" "en"
+		"logo_position"
+		{
+			"pinned_position" "BottomLeft"
+			"width_pct" "41.03763156839943"
+			"height_pct" "49.309680744297054"
+		}
+	}
+	"library_assets_full"
+	{
+		"library_capsule"
+		{
+			"image"
+			{
+				"english" "library_600x900.jpg"
+			}
+			"image2x"
+			{
+				"english" "library_600x900_2x.jpg"
+			}
+		}
+		"library_hero"
+		{
+			"image2x"
+			{
+				"english" "b4e65c9b2527063d2eb70fd89a09fc35838a66bc/library_hero_2x.jpg"
+			}
+			"image"
+			{
+				"english" "b4e65c9b2527063d2eb70fd89a09fc35838a66bc/library_hero.jpg"
+			}
+		}
+		"library_hero_blur"
+		{
+			"image"
+			{
+				"english" "b4e65c9b2527063d2eb70fd89a09fc35838a66bc/library_hero_blur.jpg"
+			}
+		}
+		"library_logo"
+		{
+			"logo_position"
+			{
+				"pinned_position" "BottomLeft"
+				"width_pct" "41.03763156839943"
+				"height_pct" "49.309680744297054"
+			}
+			"image"
+			{
+				"english" "5d35871b642ae65251fadcba65b7e59edd687dfc/logo.png"
+			}
+			"image2x"
+			{
+				"english" "5d35871b642ae65251fadcba65b7e59edd687dfc/logo_2x.png"
+			}
+		}
+		"library_header"
+		{
+			"image"
+			{
+				"english" "library_header.jpg"
+			}
+		}
+	}
+	"store_asset_mtime" "1753209801"
+	"associations"
+	{
+		"0"
+		{
+			"type" "developer"
+			"name" "Firaxis Games"
+		}
+		"1"
+		{
+			"type" "publisher"
+			"name" "2K"
+		}
+		"2"
+		{
+			"type" "franchise"
+			"name" "Sid Meier’s Civilization"
+		}
+	}
+	"primary_genre" "2"
+	"genres"
+	{
+		"0" "28"
+		"1" "2"
+	}
+	"category"
+	{
+		"category_28" "1"
+		"category_55" "1"
+		"category_56" "1"
+		"category_57" "1"
+		"category_58" "1"
+		"category_59" "1"
+		"category_2" "1"
+		"category_1" "1"
+		"category_49" "1"
+		"category_36" "1"
+		"category_47" "1"
+		"category_27" "1"
+		"category_22" "1"
+		"category_61" "1"
+		"category_45" "1"
+		"category_46" "1"
+		"category_29" "1"
+		"category_30" "1"
+		"category_64" "1"
+		"category_66" "1"
+		"category_67" "1"
+		"category_68" "1"
+		"category_69" "1"
+		"category_70" "1"
+		"category_71" "1"
+		"category_73" "1"
+		"category_74" "1"
+		"category_76" "1"
+		"category_77" "1"
+		"category_78" "1"
+		"category_79" "1"
+		"category_62" "1"
+	}
+	"supported_languages"
+	{
+		"english"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"french"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"italian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"german"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"spanish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"japanese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"koreana"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"polish"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"brazilian"
+		{
+			"subtitles" "true"
+			"supported" "true"
+		}
+		"russian"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"schinese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+		"tchinese"
+		{
+			"supported" "true"
+			"full_audio" "true"
+			"subtitles" "true"
+		}
+	}
+	"steam_release_date" "1739228482"
+	"steam_deck_blog_url" "https://steamcommunity.com/games/1295660/announcements/detail/508442816334005258"
+	"metacritic_score" "79"
+	"metacritic_fullurl" "https://www.metacritic.com/game/pc/sid-meiers-civilization-vii\?ftag=MCD-06-10aaa1f"
+	"community_visible_stats" "1"
+	"workshop_visible" "1"
+	"community_hub_visible" "1"
+	"gameid" "1295660"
+	"store_tags"
+	{
+		"0" "4364"
+		"1" "3987"
+		"2" "1670"
+		"3" "4168"
+		"4" "6310"
+		"5" "599"
+		"6" "3859"
+		"7" "4695"
+		"8" "1678"
+		"9" "9"
+		"10" "14139"
+		"11" "4328"
+		"12" "1708"
+		"13" "4598"
+		"14" "4182"
+		"15" "1717"
+		"16" "26921"
+		"17" "1741"
+		"18" "4252"
+		"19" "1775"
+	}
+	"review_score" "5"
+	"review_percentage" "47"
+}
+"extended"
+{
+	"developer" "Firaxis Games"
+	"publisher" "2K"
+	"homepage" "https://civilization.2k.com/"
+	"listofdlc" "2778060,3004650,3004660,3087220,3087240,3087250,3087260,3087270,3087280,3087290,3087300,3087310,3087320,3087330,3087350,3087370,3087380,3087410,3087430,3087440,3087460,3490290,3502600"
+	"dlcavailableonstore" "1"
+}
+"config"
+{
+	"installdir" "Sid Meier\'s Civilization VII"
+	"launch"
+	{
+		"5"
+		{
+			"executable" "\\Base\\Binaries\\Win64\\Civ7_Win64_DX12_Release.exe"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "build_review"
+			}
+			"description_loc"
+			{
+				"english" "Happy Corner (DX12 w Asserts)"
+			}
+			"description" "Happy Corner (DX12 w Asserts)"
+		}
+		"7"
+		{
+			"executable" "Base\\Binaries\\Win64\\runCiv7.bat"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "metareview,siat-branch, ut07_external_test, ihvbuild, consultation, manual-deploy-internal, siat-branch-release, playtest-external, expert_level, review-release, ratings_a, review_a,broadcast"
+			}
+			"description_loc"
+			{
+				"english" "Civilization VII (DX12) - WM"
+			}
+			"description" "Civilization VII (DX12) - WM"
+		}
+		"8"
+		{
+			"executable" "Base\\Binaries\\Win64\\runCiv7Vulkan.bat"
+			"type" "option2"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "siat-branch, manual-deploy-internal, siat-branch-release, playtest-external, expert_level, ratings_a, review_a,broadcast"
+			}
+			"description_loc"
+			{
+				"english" "Civilization VII (VK) -WM"
+			}
+			"description" "Civilization VII (VK) -WM"
+		}
+		"9"
+		{
+			"executable" "Base\\Binaries\\Win64\\Civ7_Win64_DX12_Release.exe"
+			"type" "option3"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+				"betakey" "smoke, smoke-dev-1-0-1, smoke-dev-1-1-0, smoke-dev-1-1-1"
+			}
+			"description_loc"
+			{
+				"english" "Sid Meier\'s Civilization VII (DirectX 12, Release)"
+			}
+			"description" "Sid Meier\'s Civilization VII (DirectX 12, Release)"
+		}
+		"10"
+		{
+			"executable" "Base\\Binaries\\Win64\\Civ7_Win64_DX12_FinalRelease.exe"
+			"type" "option1"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+			}
+			"description_loc"
+			{
+				"english" "Sid Meier\'s Civilization VII (DX 12)"
+			}
+			"description" "Sid Meier\'s Civilization VII (DX 12)"
+		}
+		"11"
+		{
+			"executable" "Base\\Binaries\\Win64\\Civ7_Win64_Vulkan_FinalRelease.exe"
+			"type" "option2"
+			"config"
+			{
+				"oslist" "windows"
+				"osarch" "64"
+			}
+			"description_loc"
+			{
+				"english" "Sid Meier\'s Civilization VII (Vulkan)"
+			}
+			"description" "Sid Meier\'s Civilization VII (Vulkan)"
+		}
+		"12"
+		{
+			"executable" "CivilizationVII.app\\Contents\\MacOS\\CivilizationVII"
+			"type" "default"
+			"config"
+			{
+				"oslist" "macos"
+			}
+			"description_loc"
+			{
+				"english" "Sid Meier\'s Civilization VII (macOS)"
+			}
+			"description" "Sid Meier\'s Civilization VII (macOS)"
+		}
+		"13"
+		{
+			"executable" "Base\\Binaries\\linux\\Civ7_linux_Vulkan.sh"
+			"type" "default"
+			"config"
+			{
+				"oslist" "linux"
+			}
+			"description_loc"
+			{
+				"english" "Sid Meier\'s Civilization VII (Linux)"
+			}
+			"description" "Sid Meier\'s Civilization VII (Linux)"
+		}
+	}
+	"steamcontrollertemplateindex" "1"
+	"steamcontrollerconfigdetails"
+	{
+		"3301028795"
+		{
+			"controller_type" "controller_xboxone"
+			"enabled_branches" ""
+			"use_action_block" "false"
+		}
+		"3377423133"
+		{
+			"controller_type" "controller_xboxone"
+			"enabled_branches" "build_review,console-compatible,console-compatible-switch,franky,ihvbuild,legacy,local,manual-deploy-internal,midday-debug-internal,playtest-external,playtest-internal,predeploy,previously-live-archive,ratings_a,siat-branch,smoke,smoke-dev-1-0-1,smoke-dev-1-1-0,smoke-future,smoke-release-1-0-1,smoke-release-1-0-1-quality,smoke-release-1-1-0,smoke-release-1-1-1,smoke-release-1-2-0,smoke-release-1-2-1,smoke-release-a,smoke-release-ml"
+			"use_action_block" "false"
+		}
+		"3492781449"
+		{
+			"controller_type" "controller_xboxone"
+			"enabled_branches" "default,2kqa_a,2kqa_b,console-compatible,smoke-release-1-2-2,smoke-release-1-2-3"
+			"use_action_block" "true"
+		}
+	}
+	"steamdecktouchscreen" "1"
+	"steamconfigurator3rdpartynative" "65535"
+	"uselaunchcommandline" "1"
+}
+"depots"
+{
+	"baselanguages" "english,german,french,italian,koreana,spanish,schinese,tchinese,russian,japanese,polish,brazilian"
+	"1295661"
+	{
+		"config"
+		{
+			"oslist" "windows"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "3443115785256834029"
+				"size" "17364627639"
+				"download" "15048327600"
+			}
+			"console-compatible"
+			{
+				"gid" "3443115785256834029"
+				"size" "17364627639"
+				"download" "15048327600"
+			}
+			"console-compatible-switch"
+			{
+				"gid" "3443115785256834029"
+				"size" "17364627639"
+				"download" "15048327600"
+			}
+			"legacy"
+			{
+				"gid" "3378355690337473235"
+				"size" "18041897948"
+				"download" "14348447968"
+			}
+		}
+	}
+	"1295662"
+	{
+		"config"
+		{
+			"oslist" "windows"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "8604623926511869991"
+				"size" "1300385722"
+				"download" "682933376"
+			}
+			"console-compatible"
+			{
+				"gid" "8604623926511869991"
+				"size" "1300385722"
+				"download" "682933376"
+			}
+			"console-compatible-switch"
+			{
+				"gid" "8604623926511869991"
+				"size" "1300385722"
+				"download" "682933376"
+			}
+			"legacy"
+			{
+				"gid" "3089740962936457689"
+				"size" "1359606818"
+				"download" "775100656"
+			}
+		}
+	}
+	"1295663"
+	{
+		"config"
+		{
+			"oslist" "macos"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "2879663200719946650"
+				"size" "23939379388"
+				"download" "14410915104"
+			}
+			"console-compatible"
+			{
+				"gid" "2879663200719946650"
+				"size" "23939379388"
+				"download" "14410915104"
+			}
+			"console-compatible-switch"
+			{
+				"gid" "2879663200719946650"
+				"size" "23939379388"
+				"download" "14410915104"
+			}
+			"legacy"
+			{
+				"gid" "1691727260374007928"
+				"size" "25304615695"
+				"download" "13731983744"
+			}
+		}
+	}
+	"1295664"
+	{
+		"config"
+		{
+			"oslist" "macos"
+		}
+	}
+	"1295665"
+	{
+		"config"
+		{
+			"oslist" "linux"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "5696017506834416946"
+				"size" "246661015"
+				"download" "36492672"
+			}
+			"console-compatible"
+			{
+				"gid" "5696017506834416946"
+				"size" "246661015"
+				"download" "36492672"
+			}
+			"console-compatible-switch"
+			{
+				"gid" "5696017506834416946"
+				"size" "246661015"
+				"download" "36492672"
+			}
+			"legacy"
+			{
+				"gid" "5094993695202302390"
+				"size" "240416627"
+				"download" "30973504"
+			}
+		}
+	}
+	"1295666"
+	{
+		"config"
+		{
+			"oslist" "linux"
+			"osarch" "64"
+		}
+		"manifests"
+		{
+			"public"
+			{
+				"gid" "6185944872203192343"
+				"size" "23479540213"
+				"download" "14143386480"
+			}
+			"console-compatible"
+			{
+				"gid" "6185944872203192343"
+				"size" "23479540213"
+				"download" "14143386480"
+			}
+			"console-compatible-switch"
+			{
+				"gid" "6185944872203192343"
+				"size" "23479540213"
+				"download" "14143386480"
+			}
+			"legacy"
+			{
+				"gid" "8371532776778717617"
+				"size" "24870930283"
+				"download" "13489241168"
+			}
+		}
+	}
+	"workshopdepot" "1295660"
+	"branches"
+	{
+		"public"
+		{
+			"buildid" "19251277"
+			"timeupdated" "1753192706"
+		}
+		"console-compatible"
+		{
+			"buildid" "19251277"
+			"description" "Maintains compatibility to live PlayStation and Xbox builds but may be missing latest fixes and content."
+			"timeupdated" "1753194925"
+		}
+		"console-compatible-switch"
+		{
+			"buildid" "19251277"
+			"description" "Maintains compatibility to the live Switch build but may be missing latest fixes and content."
+			"timeupdated" "1753280478"
+		}
+		"legacy"
+		{
+			"buildid" "18900948"
+			"description" "The previous major release version\'s build."
+			"timeupdated" "1753195071"
+		}
+	}
+	"privatebranches" "1"
+}
+"_missing_token" "False"
+"_change_number" "30321724"
+"_sha" "6b17d712c4536ce58e240a8f43c3dc066079812c"
+"_size" "16309"
