@@ -3,7 +3,7 @@
 This branch contains manifest files and metadata for Steam App ID: **2698940**
 
 ## Files in this branch:
-- `2698941_6931954782824843628.manifest`
+- `2698941_6309963953267827195.manifest`
 - `Key.vdf`
 - `appinfo.vdf`
 - `config.json`
@@ -12,7 +12,7 @@ This branch contains manifest files and metadata for Steam App ID: **2698940**
 - `config.json`
 
 ## Last Updated
-2025-07-15 23:17:06 UTC
+2025-09-08 20:48:33 UTC
 
 ## App Details
 - Total files processed: 7
