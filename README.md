@@ -13,7 +13,7 @@ This branch contains manifest files and metadata for Steam App ID: **1831400**
 - `config.json`
 
 ## Last Updated
-2025-09-08 21:40:22 UTC
+2025-09-09 10:47:25 UTC
 
 ## App Details
 - Total files processed: 8
